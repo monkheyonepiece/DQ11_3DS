@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DQ11"
         mc:Ignorable="d"
-        Title="DQ11 セーブデータ改造(Nintendo 3DS)" Height="650" Width="800"
+        Title="{DynamicResource Str_0001}" Height="650" Width="800"
         WindowStartupLocation="CenterScreen"
         AllowDrop="True" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver"
         Loaded="Window_Loaded">
@@ -16,26 +16,31 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
-            <MenuItem Header="ファイル(_F)">
-                <MenuItem x:Name="MenuItemFileOpen" Header="開く(_O)" Click="MenuItemFileOpen_Click"/>
-                <MenuItem x:Name="MenuItemFileOpenForce" Header="強制的に開く(_R)" Click="MenuItemFileOpenForce_Click"/>
-                <MenuItem x:Name="MenuItemFileSave" Header="上書き保存(_S)" Click="MenuItemFileSave_Click"/>
-                <MenuItem x:Name="MenuItemFileSaveAs" Header="名前を付けて保存(_S)" Click="MenuItemFileSaveAs_Click"/>
+            <MenuItem Header="{DynamicResource Str_0002}">
+                <MenuItem x:Name="MenuItemFileOpen" Header="{DynamicResource Str_0003}" Click="MenuItemFileOpen_Click"/>
+                <MenuItem x:Name="MenuItemFileOpenForce" Header="{DynamicResource Str_0004}" Click="MenuItemFileOpenForce_Click"/>
+                <MenuItem x:Name="MenuItemFileSave" Header="{DynamicResource Str_0005}" Click="MenuItemFileSave_Click"/>
+                <MenuItem x:Name="MenuItemFileSaveAs" Header="{DynamicResource Str_0006}" Click="MenuItemFileSaveAs_Click"/>
                 <Separator/>
-                <MenuItem x:Name="MenuItemExit" Header="終了(_X)" Click="MenuItemExit_Click"/>
+                <MenuItem x:Name="MenuItemExit" Header="{DynamicResource Str_0007}" Click="MenuItemExit_Click"/>
             </MenuItem>
-            <MenuItem x:Name="MenuItemAbout" Header="情報(_A)" Click="MenuItemAbout_Click"/>
+            <MenuItem x:Name="MenuItemAbout" Header="{DynamicResource Str_0008}" Click="MenuItemAbout_Click"/>
+            <MenuItem x:Name="MenuItemLanguage" Header="🌐 Language">
+                <MenuItem x:Name="LangEnglish" Header="English" IsCheckable="True" Tag="en" Click="Lang_Click"/>
+                <MenuItem x:Name="LangFrench" Header="Français" IsCheckable="True" Tag="fr" Click="Lang_Click"/>
+                <MenuItem x:Name="LangJapanese" Header="日本語" IsCheckable="True" Tag="ja" Click="Lang_Click"/>
+            </MenuItem>
         </Menu>
         <ToolBar Grid.Row="1">
-            <Button x:Name="ToolBarFileOpen" Width="32" Height="32" Click="ToolBarFileOpen_Click" ToolTip="開く">
+            <Button x:Name="ToolBarFileOpen" Width="32" Height="32" Click="ToolBarFileOpen_Click" ToolTip="{DynamicResource Str_0009}">
                 <Image Source="{StaticResource Open}"/>
             </Button>
-            <Button x:Name="ToolBarFileSave" Width="32" Height="32" Click="ToolBarFileSave_Click" ToolTip="保存">
+            <Button x:Name="ToolBarFileSave" Width="32" Height="32" Click="ToolBarFileSave_Click" ToolTip="{DynamicResource Str_0010}">
                 <Image Source="{StaticResource Save}"/>
             </Button>
         </ToolBar>
         <TabControl Grid.Row="2">
-            <TabItem Header="基本設定">
+            <TabItem Header="{DynamicResource Str_0011}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -65,24 +70,24 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Label Content="プレイ時間" Grid.RowSpan="3" VerticalAlignment="Center"/>
-                        <Label Content="時間" Grid.Column="2"/>
-                        <Label Content="分"  Grid.Row="1" Grid.Column="2"/>
-                        <Label Content="秒"  Grid.Row="2" Grid.Column="2"/>
-                        <Label Content="もち金" Grid.Row="3"/>
+                        <Label Content="{DynamicResource Str_0012}" Grid.RowSpan="3" VerticalAlignment="Center"/>
+                        <Label Content="{DynamicResource Str_0013}" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0014}"  Grid.Row="1" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0015}"  Grid.Row="2" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0016}" Grid.Row="3"/>
                         <Label Content="G" Grid.Row="3" Grid.Column="2"/>
-                        <Label Content="銀行" Grid.Row="4"/>
+                        <Label Content="{DynamicResource Str_0017}" Grid.Row="4"/>
                         <Label Content="G" Grid.Row="4" Grid.Column="2"/>
-                        <Label Content="カジノコイン" Grid.Row="5"/>
-                        <Label Content="枚" Grid.Row="5" Grid.Column="2"/>
-                        <Label Content="ちいさなメダル" Grid.Row="6"/>
-                        <Label Content="枚" Grid.Row="6" Grid.Column="2"/>
-                        <Label Content="あずけたメダル" Grid.Row="7"/>
-                        <Label Content="枚" Grid.Row="7" Grid.Column="2"/>
-                        <Label Content="うちなおしの宝珠" Grid.Row="8"/>
-                        <Label Content="こ" Grid.Row="8" Grid.Column="2"/>
-                        <Label Content="乗り物" Grid.Row="10"/>
-                        <Label Content="クリア" Grid.Row="11"/>
+                        <Label Content="{DynamicResource Str_0018}" Grid.Row="5"/>
+                        <Label Content="{DynamicResource Str_0019}" Grid.Row="5" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0020}" Grid.Row="6"/>
+                        <Label Content="{DynamicResource Str_0019}" Grid.Row="6" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0021}" Grid.Row="7"/>
+                        <Label Content="{DynamicResource Str_0019}" Grid.Row="7" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0022}" Grid.Row="8"/>
+                        <Label Content="{DynamicResource Str_0023}" Grid.Row="8" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0024}" Grid.Row="10"/>
+                        <Label Content="{DynamicResource Str_0025}" Grid.Row="11"/>
                         <TextBox Grid.Column="1" Text="{Binding PlayHour, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding PlayMinute, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding PlaySecond, UpdateSourceTrigger=PropertyChanged}"/>
@@ -93,15 +98,15 @@
                         <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding DepositSmallMedal, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding RebuildJewel, UpdateSourceTrigger=PropertyChanged}"/>
                         <ComboBox Grid.Row="10" Grid.Column="1" SelectedIndex="{Binding Vehicle}">
-                            <ComboBoxItem Content="無し"/>
-                            <ComboBoxItem Content="馬"/>
-                            <ComboBoxItem Content="パールモービル"/>
-                            <ComboBoxItem Content="スカルライダー"/>
-                            <ComboBoxItem Content="ビーライダー"/>
-                            <ComboBoxItem Content="ドラゴンライダー"/>
-                            <ComboBoxItem Content="デュラハンナイト"/>
-                            <ComboBoxItem Content="バロンナイト"/>
-                            <ComboBoxItem Content="船"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0026}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0027}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0028}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0029}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0030}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0031}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0032}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0033}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0034}"/>
                         </ComboBox>
                         <CheckBox Grid.Row="11" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding GameClear}"/>
                     </Grid>
@@ -128,28 +133,28 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Label Content="戦闘勝利回数"/>
-                        <Label Content="回" Grid.Column="2"/>
-                        <Label Content="ふしぎな鍛冶をした回数" Grid.Row="1"/>
-                        <Label Content="回" Grid.Row="1" Grid.Column="2"/>
-                        <Label Content="トータル獲得ゴールド" Grid.Row="2"/>
+                        <Label Content="{DynamicResource Str_0035}"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0037}" Grid.Row="1"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="1" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0038}" Grid.Row="2"/>
                         <Label Content="G" Grid.Row="2" Grid.Column="2"/>
-                        <Label Content="トータル獲得ちいさなメダル" Grid.Row="3"/>
-                        <Label Content="枚" Grid.Row="3" Grid.Column="2"/>
-                        <Label Content="ツボ・タル破壊" Grid.Row="4"/>
-                        <Label Content="回" Grid.Row="4" Grid.Column="2"/>
-                        <Label Content="キャンプ" Grid.Row="5"/>
-                        <Label Content="回" Grid.Row="5" Grid.Column="2"/>
-                        <Label Content="宿屋に泊まった回数" Grid.Row="6"/>
-                        <Label Content="回" Grid.Row="6" Grid.Column="2"/>
-                        <Label Content="れんけいを使用した回数" Grid.Row="7"/>
-                        <Label Content="回" Grid.Row="7" Grid.Column="2"/>
-                        <Label Content="スロットを遊んだ回数" Grid.Row="9"/>
-                        <Label Content="回" Grid.Row="9" Grid.Column="2"/>
-                        <Label Content="ポーカーを遊んだ回数" Grid.Row="10"/>
-                        <Label Content="回" Grid.Row="10" Grid.Column="2"/>
-                        <Label Content="ルーレットを遊んだ回数" Grid.Row="11"/>
-                        <Label Content="回" Grid.Row="11" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0039}" Grid.Row="3"/>
+                        <Label Content="{DynamicResource Str_0019}" Grid.Row="3" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0040}" Grid.Row="4"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="4" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0041}" Grid.Row="5"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="5" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0042}" Grid.Row="6"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="6" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0043}" Grid.Row="7"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="7" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0044}" Grid.Row="9"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="9" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0045}" Grid.Row="10"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="10" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0046}" Grid.Row="11"/>
+                        <Label Content="{DynamicResource Str_0036}" Grid.Row="11" Grid.Column="2"/>
                         <TextBox Grid.Column="1" Text="{Binding KillMonster, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Smith, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding TotalGold, UpdateSourceTrigger=PropertyChanged}"/>
@@ -164,7 +169,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="人物">
+            <TabItem Header="{DynamicResource Str_0047}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="200"/>
@@ -198,23 +203,23 @@
                             <ColumnDefinition Width="80"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Label Content="名前"/>
+                        <Label Content="{DynamicResource Str_0048}"/>
                         <Label Content="Lv" Grid.Row="1"/>
-                        <Label Content="経験値" Grid.Row="2"/>
-                        <Label Content="現在HP" Grid.Row="3"/>
-                        <Label Content="現在MP" Grid.Row="4"/>
-                        <Label Content="最大HP+" Grid.Row="5"/>
-                        <Label Content="最大MP+" Grid.Row="6"/>
-                        <Label Content="こうげき魔力+" Grid.Row="7"/>
-                        <Label Content="かいふく魔力+" Grid.Row="8"/>
-                        <Label Content="ちから+" Grid.Row="9"/>
-                        <Label Content="みのまもり+" Grid.Row="10"/>
-                        <Label Content="すばやさ+" Grid.Row="11"/>
-                        <Label Content="きようさ+" Grid.Row="12"/>
-                        <Label Content="みりょく+" Grid.Row="13"/>
-                        <Label Content="スキル＋" Grid.Row="14"/>
-                        <Label Content="作戦" Grid.Row="15"/>
-                        <Label Content="ステータス" Grid.Row="16"/>
+                        <Label Content="{DynamicResource Str_0049}" Grid.Row="2"/>
+                        <Label Content="{DynamicResource Str_0050}" Grid.Row="3"/>
+                        <Label Content="{DynamicResource Str_0051}" Grid.Row="4"/>
+                        <Label Content="{DynamicResource Str_0052}" Grid.Row="5"/>
+                        <Label Content="{DynamicResource Str_0053}" Grid.Row="6"/>
+                        <Label Content="{DynamicResource Str_0054}" Grid.Row="7"/>
+                        <Label Content="{DynamicResource Str_0055}" Grid.Row="8"/>
+                        <Label Content="{DynamicResource Str_0056}" Grid.Row="9"/>
+                        <Label Content="{DynamicResource Str_0057}" Grid.Row="10"/>
+                        <Label Content="{DynamicResource Str_0058}" Grid.Row="11"/>
+                        <Label Content="{DynamicResource Str_0059}" Grid.Row="12"/>
+                        <Label Content="{DynamicResource Str_0060}" Grid.Row="13"/>
+                        <Label Content="{DynamicResource Str_0061}" Grid.Row="14"/>
+                        <Label Content="{DynamicResource Str_0062}" Grid.Row="15"/>
+                        <Label Content="{DynamicResource Str_0063}" Grid.Row="16"/>
                         <TextBox Grid.Column="1" Text="{Binding ElementName=ListBoxChar, Path=SelectedItem.Name ,UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding ElementName=ListBoxChar, Path=SelectedItem.Lv ,UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding ElementName=ListBoxChar, Path=SelectedItem.Exp ,UpdateSourceTrigger=PropertyChanged}"/>
@@ -231,12 +236,12 @@
                         <TextBox Grid.Row="13" Grid.Column="1" Text="{Binding ElementName=ListBoxChar, Path=SelectedItem.Charm ,UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="14" Grid.Column="1" Text="{Binding ElementName=ListBoxChar, Path=SelectedItem.Skill ,UpdateSourceTrigger=PropertyChanged}"/>
                         <ComboBox x:Name="ComboBoxCharStrategy" Grid.Row="15" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxChar, Path=SelectedItem.Strategy}">
-                            <ComboBoxItem Content="ガンガンいこうぜ"/>
-                            <ComboBoxItem Content="バッチリがんばれ"/>
-                            <ComboBoxItem Content="いろいろやろうぜ"/>
-                            <ComboBoxItem Content="いのちだいじに"/>
-                            <ComboBoxItem Content="MPつかうな"/>
-                            <ComboBoxItem Content="めいれいさせろ"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0064}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0065}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0066}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0067}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0068}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0069}"/>
                         </ComboBox>
                         <ListBox Grid.Row="16" Grid.Column="1" Grid.RowSpan="2" ItemsSource="{Binding ElementName=ListBoxChar, Path=SelectedItem.Status}">
                             <ListBox.ItemTemplate>
@@ -267,8 +272,8 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Button Content="最弱" Margin="2,2,2,2" Click="ButtonCharStatusMin_Click"/>
-                            <Button Grid.Column="1" Content="最強" Margin="2,2,2,2" Click="ButtonCharStatusMax_Click"/>
+                            <Button Content="{DynamicResource Str_0070}" Margin="2,2,2,2" Click="ButtonCharStatusMin_Click"/>
+                            <Button Grid.Column="1" Content="{DynamicResource Str_0071}" Margin="2,2,2,2" Click="ButtonCharStatusMax_Click"/>
                         </Grid>
                         <Grid Grid.Row="2">
                             <Grid.RowDefinitions>
@@ -283,13 +288,13 @@
                                 <ColumnDefinition Width="50"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Label Content="装備"/>
-                            <Label Content="右手" Grid.Row="1"/>
-                            <Label Content="左手" Grid.Row="1" Grid.Column="2"/>
-                            <Label Content="頭" Grid.Row="2"/>
-                            <Label Content="体" Grid.Row="2" Grid.Column="2"/>
-                            <Label Content="アクセ1" Grid.Row="3"/>
-                            <Label Content="アクセ2" Grid.Row="3" Grid.Column="2"/>
+                            <Label Content="{DynamicResource Str_0072}"/>
+                            <Label Content="{DynamicResource Str_0073}" Grid.Row="1"/>
+                            <Label Content="{DynamicResource Str_0074}" Grid.Row="1" Grid.Column="2"/>
+                            <Label Content="{DynamicResource Str_0075}" Grid.Row="2"/>
+                            <Label Content="{DynamicResource Str_0076}" Grid.Row="2" Grid.Column="2"/>
+                            <Label Content="{DynamicResource Str_0077}" Grid.Row="3"/>
+                            <Label Content="{DynamicResource Str_0078}" Grid.Row="3" Grid.Column="2"/>
                             <ComboBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding ElementName=ListBoxCharItem, Path=Items}" DisplayMemberPath="Name" SelectedIndex="{Binding ElementName=ListBoxChar, Path=SelectedItem.EquipRightHand}"/>
                             <ComboBox Grid.Row="1" Grid.Column="3" ItemsSource="{Binding ElementName=ListBoxCharItem, Path=Items}" DisplayMemberPath="Name" SelectedIndex="{Binding ElementName=ListBoxChar, Path=SelectedItem.EquipLeftHand}"/>
                             <ComboBox Grid.Row="2" Grid.Column="1" ItemsSource="{Binding ElementName=ListBoxCharItem, Path=Items}" DisplayMemberPath="Name" SelectedIndex="{Binding ElementName=ListBoxChar, Path=SelectedItem.EquipHead}"/>
@@ -300,7 +305,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="れんけい・スキル">
+            <TabItem Header="{DynamicResource Str_0079}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -321,7 +326,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="ふくろ">
+            <TabItem Header="{DynamicResource Str_0080}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -331,33 +336,33 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <DockPanel>
-                        <Label Content="どうぐぶくろ" DockPanel.Dock="Top"/>
+                        <Label Content="{DynamicResource Str_0081}" DockPanel.Dock="Top"/>
                         <ComboBox x:Name="ComboBoxBagToolPage"  DockPanel.Dock="Top"/>
                         <StackPanel x:Name="StackPanelBagTool" Margin="0,5,0,0"/>
                     </DockPanel>
                     <DockPanel Grid.Column="2">
-                        <Label Content="そうびぶくろ" DockPanel.Dock="Top"/>
+                        <Label Content="{DynamicResource Str_0082}" DockPanel.Dock="Top"/>
                         <ComboBox x:Name="ComboBoxBagEquipmentPage"  DockPanel.Dock="Top"/>
                         <StackPanel x:Name="StackPanelBagEquipment" Margin="0,5,0,0"/>
                     </DockPanel>
                     <StackPanel Grid.Column="4">
-                        <Label Content="■ふくろの種類"/>
-                        <RadioButton x:Name="RadioButtonBagTypeTool" Content="どうぐ" GroupName="Type"/>
-                        <RadioButton x:Name="RadioButtonBagTypeEquipment" Content="そうび" GroupName="Type"/>
-                        <Label Content="■何をする？"/>
-                        <RadioButton x:Name="RadioButtonBagChangeCount" Content="個数変更" GroupName="Action"/>
-                        <RadioButton x:Name="RadioButtonBagClear" Content="全て削除" GroupName="Action"/>
-                        <RadioButton x:Name="RadioButtonBagAppend" Content="全て追加" GroupName="Action"/>
+                        <Label Content="{DynamicResource Str_0083}"/>
+                        <RadioButton x:Name="RadioButtonBagTypeTool" Content="{DynamicResource Str_0084}" GroupName="Type"/>
+                        <RadioButton x:Name="RadioButtonBagTypeEquipment" Content="{DynamicResource Str_0085}" GroupName="Type"/>
+                        <Label Content="{DynamicResource Str_0086}"/>
+                        <RadioButton x:Name="RadioButtonBagChangeCount" Content="{DynamicResource Str_0087}" GroupName="Action"/>
+                        <RadioButton x:Name="RadioButtonBagClear" Content="{DynamicResource Str_0088}" GroupName="Action"/>
+                        <RadioButton x:Name="RadioButtonBagAppend" Content="{DynamicResource Str_0089}" GroupName="Action"/>
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="個数"/>
+                            <Label Content="{DynamicResource Str_0090}"/>
                             <TextBox x:Name="TextBoxBagItemCount" Text="1"/>
-                            <Label Content="個"/>
+                            <Label Content="{DynamicResource Str_0091}"/>
                         </StackPanel>
-                        <Button x:Name="ButtonBagChange" Content="実行" Click="ButtonBagChange_Click"/>
+                        <Button x:Name="ButtonBagChange" Content="{DynamicResource Str_0092}" Click="ButtonBagChange_Click"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="だいじなもの">
+            <TabItem Header="{DynamicResource Str_0093}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -378,7 +383,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="レシピ">
+            <TabItem Header="{DynamicResource Str_0094}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -399,7 +404,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="称号">
+            <TabItem Header="{DynamicResource Str_0095}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -420,7 +425,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="クエスト">
+            <TabItem Header="{DynamicResource Str_0096}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -428,22 +433,22 @@
                     </Grid.RowDefinitions>
                     <ListBox x:Name="ListBoxQuest"/>
                     <StackPanel Grid.Row="1" Orientation="Horizontal">
-                        <Label Content="全て" VerticalAlignment="Center"/>
+                        <Label Content="{DynamicResource Str_0097}" VerticalAlignment="Center"/>
                         <ComboBox x:Name="ComboBoxQuestState" Width="100"  VerticalAlignment="Center">
-                            <ComboBoxItem Content="詳細不明"/>
-                            <ComboBoxItem Content="詳細判明"/>
-                            <ComboBoxItem Content="受注中"/>
-                            <ComboBoxItem Content="達成"/>
-                            <ComboBoxItem Content="クリア"/>
-                            <ComboBoxItem Content="見えない"/>
-                            <ComboBoxItem Content="不定"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0098}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0099}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0100}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0101}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0025}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0102}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0103}"/>
                         </ComboBox>
-                        <Label Content="に" VerticalAlignment="Center"/>
-                        <Button x:Name="ButtonQuestPatch" Content="設定"/>
+                        <Label Content="{DynamicResource Str_0104}" VerticalAlignment="Center"/>
+                        <Button x:Name="ButtonQuestPatch" Content="{DynamicResource Str_0105}"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="ルーラ">
+            <TabItem Header="{DynamicResource Str_0106}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -464,7 +469,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="パーティー">
+            <TabItem Header="{DynamicResource Str_0107}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -475,8 +480,8 @@
                         <RowDefinition Height="12*"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Label Content="一覧"/>
-                    <Label Content="対象" Grid.Column="1"/>
+                    <Label Content="{DynamicResource Str_0108}"/>
+                    <Label Content="{DynamicResource Str_0109}" Grid.Column="1"/>
                     <ListBox x:Name="ListBoxParty" Grid.Row="1" ItemsSource="{Binding Party.List}" DisplayMemberPath="Name"/>
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
@@ -506,21 +511,21 @@
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="モンスター図鑑">
+            <TabItem Header="{DynamicResource Str_0110}">
                 <DockPanel>
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
-                        <RadioButton x:Name="RadioButtonAll" VerticalAlignment="Center" IsChecked="True" Content="全て"/>
-                        <RadioButton x:Name="RadioButtonNone" VerticalAlignment="Center" Content="討伐数0"/>
-                        <RadioButton x:Name="RadioButtonHave" VerticalAlignment="Center" Content="討伐数0以外"/>
+                        <RadioButton x:Name="RadioButtonAll" VerticalAlignment="Center" IsChecked="True" Content="{DynamicResource Str_0097}"/>
+                        <RadioButton x:Name="RadioButtonNone" VerticalAlignment="Center" Content="{DynamicResource Str_0111}"/>
+                        <RadioButton x:Name="RadioButtonHave" VerticalAlignment="Center" Content="{DynamicResource Str_0112}"/>
                         <TextBox x:Name="TextBoxMonsterCount" Margin="10,0,0,0" Width="100" Text=""/>
-                        <Button x:Name="ButtonMonsterDecision" Content="に設定"/>
+                        <Button x:Name="ButtonMonsterDecision" Content="{DynamicResource Str_0113}"/>
                     </StackPanel>
                     <ScrollViewer>
                         <StackPanel x:Name="StackPanelMonster"/>
                     </ScrollViewer>
                 </DockPanel>
             </TabItem>
-            <TabItem Header="ストーリー">
+            <TabItem Header="{DynamicResource Str_0114}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -541,7 +546,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="ヨッチ族">
+            <TabItem Header="{DynamicResource Str_0115}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -579,7 +584,7 @@
                         </Grid>
                     </Grid>
                     <TabControl Grid.Column="2">
-                        <TabItem Header="基本">
+                        <TabItem Header="{DynamicResource Str_0116}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="100"/>
@@ -603,59 +608,59 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
-                                <Label Content="名前"/>
-                                <Label Content="色" Grid.Row="1"/>
-                                <Label Content="ランク" Grid.Row="2"/>
-                                <Label Content="やる気" Grid.Row="3"/>
-                                <Label Content="武器" Grid.Row="4"/>
-                                <Label Content="ぼうし" Grid.Row="5"/>
-                                <Label Content="情報" Grid.Row="6"/>
-                                <Label Content="ブースト" Grid.Row="7"/>
-                                <Label Content="一人称" Grid.Row="8"/>
-                                <Label Content="第一発見者" Grid.Row="9"/>
-                                <Label Content="配信2人目" Grid.Row="10"/>
-                                <Label Content="配信3人目" Grid.Row="11"/>
-                                <Label Content="配信4人目" Grid.Row="12"/>
-                                <Label Content="ユニークID" Grid.Row="13"/>
+                                <Label Content="{DynamicResource Str_0048}"/>
+                                <Label Content="{DynamicResource Str_0117}" Grid.Row="1"/>
+                                <Label Content="{DynamicResource Str_0118}" Grid.Row="2"/>
+                                <Label Content="{DynamicResource Str_0119}" Grid.Row="3"/>
+                                <Label Content="{DynamicResource Str_0120}" Grid.Row="4"/>
+                                <Label Content="{DynamicResource Str_0121}" Grid.Row="5"/>
+                                <Label Content="{DynamicResource Str_0122}" Grid.Row="6"/>
+                                <Label Content="{DynamicResource Str_0123}" Grid.Row="7"/>
+                                <Label Content="{DynamicResource Str_0124}" Grid.Row="8"/>
+                                <Label Content="{DynamicResource Str_0125}" Grid.Row="9"/>
+                                <Label Content="{DynamicResource Str_0126}" Grid.Row="10"/>
+                                <Label Content="{DynamicResource Str_0127}" Grid.Row="11"/>
+                                <Label Content="{DynamicResource Str_0128}" Grid.Row="12"/>
+                                <Label Content="{DynamicResource Str_0129}" Grid.Row="13"/>
                                 <TextBox Grid.Column="1" Text="{Binding ElementName=ListBoxYochi, Path=SelectedItem.Name ,UpdateSourceTrigger=PropertyChanged}"/>
                                 <ComboBox Grid.Row="1" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.Color}">
-                                    <ComboBoxItem Content="赤"/>
-                                    <ComboBoxItem Content="青"/>
-                                    <ComboBoxItem Content="緑"/>
-                                    <ComboBoxItem Content="黄"/>
-                                    <ComboBoxItem Content="紫"/>
-                                    <ComboBoxItem Content="白"/>
-                                    <ComboBoxItem Content="メタル"/>
-                                    <ComboBoxItem Content="赤青"/>
-                                    <ComboBoxItem Content="赤緑"/>
-                                    <ComboBoxItem Content="赤黄"/>
-                                    <ComboBoxItem Content="赤紫"/>
-                                    <ComboBoxItem Content="赤白"/>
-                                    <ComboBoxItem Content="青緑"/>
-                                    <ComboBoxItem Content="青黄"/>
-                                    <ComboBoxItem Content="青紫"/>
-                                    <ComboBoxItem Content="青白"/>
-                                    <ComboBoxItem Content="緑黄"/>
-                                    <ComboBoxItem Content="緑紫"/>
-                                    <ComboBoxItem Content="緑白"/>
-                                    <ComboBoxItem Content="黄紫"/>
-                                    <ComboBoxItem Content="黄白"/>
-                                    <ComboBoxItem Content="紫白"/>
-                                    <ComboBoxItem Content="赤青 v2"/>
-                                    <ComboBoxItem Content="赤緑 v2"/>
-                                    <ComboBoxItem Content="赤黄 v2"/>
-                                    <ComboBoxItem Content="赤紫 v2"/>
-                                    <ComboBoxItem Content="赤白 v2"/>
-                                    <ComboBoxItem Content="青緑 v2"/>
-                                    <ComboBoxItem Content="青黄 v2"/>
-                                    <ComboBoxItem Content="青紫 v2"/>
-                                    <ComboBoxItem Content="青白 v2"/>
-                                    <ComboBoxItem Content="緑黄 v2"/>
-                                    <ComboBoxItem Content="緑紫 v2"/>
-                                    <ComboBoxItem Content="緑白 v2"/>
-                                    <ComboBoxItem Content="黄紫 v2"/>
-                                    <ComboBoxItem Content="黄白 v2"/>
-                                    <ComboBoxItem Content="紫白 v2"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0130}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0131}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0132}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0133}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0134}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0135}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0136}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0137}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0138}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0139}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0140}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0141}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0142}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0143}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0144}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0145}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0146}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0147}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0148}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0149}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0150}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0151}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0152}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0153}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0154}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0155}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0156}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0157}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0158}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0159}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0160}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0161}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0162}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0163}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0164}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0165}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0166}"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="2" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.Rank}">
                                     <ComboBoxItem Content="F"/>
@@ -673,8 +678,8 @@
                                 </StackPanel>
                                 <ComboBox Grid.Row="5" Grid.Column="1" ItemsSource="{Binding YochiHat}" DisplayMemberPath="Name" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.Hat}"/>
                                 <ComboBox Grid.Row="6" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.Info}">
-                                    <ComboBoxItem Content="見てない"/>
-                                    <ComboBoxItem Content="見た"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0167}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0168}"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="7" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.Boost}">
                                     <ComboBoxItem Content=""/>
@@ -685,13 +690,13 @@
                                     <ComboBoxItem Content="+5"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="8" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.FirstPerson}">
-                                    <ComboBoxItem Content="オレ"/>
-                                    <ComboBoxItem Content="わたくし"/>
-                                    <ComboBoxItem Content="オラ"/>
-                                    <ComboBoxItem Content="オイラ"/>
-                                    <ComboBoxItem Content="ボク"/>
-                                    <ComboBoxItem Content="ボク"/>
-                                    <ComboBoxItem Content="オレさま"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0169}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0170}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0171}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0172}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0173}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0173}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0174}"/>
                                 </ComboBox>
                                 <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding ElementName=ListBoxYochi, Path=SelectedItem.First ,UpdateSourceTrigger=PropertyChanged}"/>
                                 <TextBox Grid.Row="10" Grid.Column="1" Text="{Binding ElementName=ListBoxYochi, Path=SelectedItem.Second ,UpdateSourceTrigger=PropertyChanged}"/>
@@ -700,7 +705,7 @@
                                 <TextBox Grid.Row="13" Grid.Column="1" Text="{Binding ElementName=ListBoxYochi, Path=SelectedItem.ID ,UpdateSourceTrigger=PropertyChanged}"/>
                             </Grid>
                         </TabItem>
-                        <TabItem Header="プロフィール">
+                        <TabItem Header="{DynamicResource Str_0175}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="100"/>
@@ -724,279 +729,279 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
-                                <Label Content="称号"/>
+                                <Label Content="{DynamicResource Str_0095}"/>
                                 <Label Content="Lv" Grid.Row="1"/>
-                                <Label Content="ストーリー進行度" Grid.Row="2"/>
-                                <Label Content="性別" Grid.Row="3"/>
-                                <Label Content="性格" Grid.Row="4"/>
-                                <Label Content="年代" Grid.Row="5"/>
-                                <Label Content="趣味" Grid.Row="6"/>
-                                <Label Content="出身地" Grid.Row="7"/>
-                                <Label Content="ドラクエ歴" Grid.Row="8"/>
-                                <Label Content="メッセージ" Grid.Row="9"/>
-                                <Label Content="しばりプレイ" Grid.Row="10"/>
+                                <Label Content="{DynamicResource Str_0176}" Grid.Row="2"/>
+                                <Label Content="{DynamicResource Str_0177}" Grid.Row="3"/>
+                                <Label Content="{DynamicResource Str_0178}" Grid.Row="4"/>
+                                <Label Content="{DynamicResource Str_0179}" Grid.Row="5"/>
+                                <Label Content="{DynamicResource Str_0180}" Grid.Row="6"/>
+                                <Label Content="{DynamicResource Str_0181}" Grid.Row="7"/>
+                                <Label Content="{DynamicResource Str_0182}" Grid.Row="8"/>
+                                <Label Content="{DynamicResource Str_0183}" Grid.Row="9"/>
+                                <Label Content="{DynamicResource Str_0184}" Grid.Row="10"/>
                                 <ComboBox Grid.Column="1"/>
                                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassLv ,UpdateSourceTrigger=PropertyChanged}"/>
                                 <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassStory ,UpdateSourceTrigger=PropertyChanged}"/>
                                 <ComboBox Grid.Row="3" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassSex}">
-                                    <ComboBoxItem Content="ないしょ"/>
-                                    <ComboBoxItem Content="男"/>
-                                    <ComboBoxItem Content="女"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0185}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0186}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0187}"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="4" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassPersonality}">
-                                    <ComboBoxItem Content="ないしょ"/>
-                                    <ComboBoxItem Content="あたまでっかち"/>
-                                    <ComboBoxItem Content="あまえんぼう"/>
-                                    <ComboBoxItem Content="いくじなし"/>
-                                    <ComboBoxItem Content="いっぴきおおかみ"/>
-                                    <ComboBoxItem Content="いのちしらず"/>
-                                    <ComboBoxItem Content="うっかりもの"/>
-                                    <ComboBoxItem Content="おおぐらい"/>
-                                    <ComboBoxItem Content="おじょうさま"/>
-                                    <ComboBoxItem Content="おせっかい"/>
-                                    <ComboBoxItem Content="おちょうしもの"/>
-                                    <ComboBoxItem Content="おっちょこちょい"/>
-                                    <ComboBoxItem Content="おてんば"/>
-                                    <ComboBoxItem Content="おとこまさり"/>
-                                    <ComboBoxItem Content="がんこもの"/>
-                                    <ComboBoxItem Content="がんばりや"/>
-                                    <ComboBoxItem Content="きれもの"/>
-                                    <ComboBoxItem Content="くろうにん"/>
-                                    <ComboBoxItem Content="ごうけつ"/>
-                                    <ComboBoxItem Content="さびしがりや"/>
-                                    <ComboBoxItem Content="しあわせもの"/>
-                                    <ComboBoxItem Content="しょうじきもの"/>
-                                    <ComboBoxItem Content="ずのうめいせき"/>
-                                    <ComboBoxItem Content="すばしっこい"/>
-                                    <ComboBoxItem Content="セクシーギャル"/>
-                                    <ComboBoxItem Content="せけんしらず"/>
-                                    <ComboBoxItem Content="タフガイ"/>
-                                    <ComboBoxItem Content="ちからじまん"/>
-                                    <ComboBoxItem Content="てつじん"/>
-                                    <ComboBoxItem Content="でんこうせっか"/>
-                                    <ComboBoxItem Content="なきむし"/>
-                                    <ComboBoxItem Content="なまけもの"/>
-                                    <ComboBoxItem Content="ぬけめがない"/>
-                                    <ComboBoxItem Content="ねっけつかん"/>
-                                    <ComboBoxItem Content="のんきもの"/>
-                                    <ComboBoxItem Content="ひっこみじあん"/>
-                                    <ComboBoxItem Content="ひねくれもの"/>
-                                    <ComboBoxItem Content="ふつう"/>
-                                    <ComboBoxItem Content="へこたれない"/>
-                                    <ComboBoxItem Content="まけずぎらい"/>
-                                    <ComboBoxItem Content="みえっぱり"/>
-                                    <ComboBoxItem Content="むっちりスケベ"/>
-                                    <ComboBoxItem Content="やさしいひと"/>
-                                    <ComboBoxItem Content="ラッキーマン"/>
-                                    <ComboBoxItem Content="らんぼうもの"/>
-                                    <ComboBoxItem Content="ロマンチスト"/>
-                                    <ComboBoxItem Content="わがまま"/>
-                                    <ComboBoxItem Content="ヘンタイ2号"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0185}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0188}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0189}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0190}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0191}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0192}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0193}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0194}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0195}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0196}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0197}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0198}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0199}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0200}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0201}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0202}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0203}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0204}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0205}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0206}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0207}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0208}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0209}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0210}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0211}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0212}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0213}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0214}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0215}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0216}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0217}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0218}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0219}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0220}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0221}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0222}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0223}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0224}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0225}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0226}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0227}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0228}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0229}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0230}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0231}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0232}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0233}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0234}"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="5" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassAge}">
-                                    <ComboBoxItem Content="ないしょ"/>
-                                    <ComboBoxItem Content="10代未満"/>
-                                    <ComboBoxItem Content="10代"/>
-                                    <ComboBoxItem Content="20代"/>
-                                    <ComboBoxItem Content="30代"/>
-                                    <ComboBoxItem Content="40代"/>
-                                    <ComboBoxItem Content="50代"/>
-                                    <ComboBoxItem Content="60代"/>
-                                    <ComboBoxItem Content="70代以上"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0185}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0235}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0236}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0237}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0238}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0239}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0240}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0241}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0242}"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="6" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassHobby}">
-                                    <ComboBoxItem Content="ないしょ"/>
-                                    <ComboBoxItem Content="アウトドア"/>
-                                    <ComboBoxItem Content="水泳"/>
-                                    <ComboBoxItem Content="野球"/>
-                                    <ComboBoxItem Content="射撃"/>
-                                    <ComboBoxItem Content="筋トレ"/>
-                                    <ComboBoxItem Content="散歩"/>
-                                    <ComboBoxItem Content="自転車"/>
-                                    <ComboBoxItem Content="カヌー"/>
-                                    <ComboBoxItem Content="ゴルフ"/>
-                                    <ComboBoxItem Content="サーフィン"/>
-                                    <ComboBoxItem Content="サッカー"/>
-                                    <ComboBoxItem Content="乗馬"/>
-                                    <ComboBoxItem Content="サバゲー"/>
-                                    <ComboBoxItem Content="ダイビング"/>
-                                    <ComboBoxItem Content="スポーツ観戦"/>
-                                    <ComboBoxItem Content="ハイキング"/>
-                                    <ComboBoxItem Content="バスケットボール"/>
-                                    <ComboBoxItem Content="ダンス"/>
-                                    <ComboBoxItem Content="テニス"/>
-                                    <ComboBoxItem Content="ボルダリング"/>
-                                    <ComboBoxItem Content="アイドル"/>
-                                    <ComboBoxItem Content="ライブ"/>
-                                    <ComboBoxItem Content="ボイトレ"/>
-                                    <ComboBoxItem Content="楽器演奏"/>
-                                    <ComboBoxItem Content="カラオケ"/>
-                                    <ComboBoxItem Content="映像配信"/>
-                                    <ComboBoxItem Content="実況"/>
-                                    <ComboBoxItem Content="アニソン"/>
-                                    <ComboBoxItem Content="コスプレ"/>
-                                    <ComboBoxItem Content="お絵描き"/>
-                                    <ComboBoxItem Content="アニメ"/>
-                                    <ComboBoxItem Content="ゲーム"/>
-                                    <ComboBoxItem Content="ボードゲーム"/>
-                                    <ComboBoxItem Content="ネットゲーム"/>
-                                    <ComboBoxItem Content="カードゲーム"/>
-                                    <ComboBoxItem Content="人狼ゲーム"/>
-                                    <ComboBoxItem Content="謎解き"/>
-                                    <ComboBoxItem Content="麻雀"/>
-                                    <ComboBoxItem Content="パズル"/>
-                                    <ComboBoxItem Content="スマホ"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0185}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0243}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0244}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0245}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0246}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0247}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0248}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0249}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0250}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0251}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0252}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0253}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0254}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0255}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0256}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0257}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0258}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0259}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0260}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0261}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0262}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0263}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0264}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0265}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0266}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0267}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0268}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0269}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0270}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0271}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0272}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0273}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0274}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0275}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0276}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0277}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0278}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0279}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0280}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0281}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0282}"/>
                                     <ComboBoxItem Content="SNS"/>
-                                    <ComboBoxItem Content="ブログ"/>
-                                    <ComboBoxItem Content="インターネット"/>
-                                    <ComboBoxItem Content="オークション"/>
-                                    <ComboBoxItem Content="ショッピング"/>
-                                    <ComboBoxItem Content="ホームパーティー"/>
-                                    <ComboBoxItem Content="宴会"/>
-                                    <ComboBoxItem Content="旅行"/>
-                                    <ComboBoxItem Content="ドライブ"/>
-                                    <ComboBoxItem Content="廃墟巡り"/>
-                                    <ComboBoxItem Content="カメラ"/>
-                                    <ComboBoxItem Content="読書"/>
-                                    <ComboBoxItem Content="映画"/>
-                                    <ComboBoxItem Content="囲碁"/>
-                                    <ComboBoxItem Content="将棋"/>
-                                    <ComboBoxItem Content="株"/>
-                                    <ComboBoxItem Content="親孝行"/>
-                                    <ComboBoxItem Content="自分探し"/>
-                                    <ComboBoxItem Content="じゃんけん"/>
-                                    <ComboBoxItem Content="ツチノコ探し"/>
-                                    <ComboBoxItem Content="日曜大工"/>
-                                    <ComboBoxItem Content="プラモデル"/>
-                                    <ComboBoxItem Content="フルコンプ"/>
-                                    <ComboBoxItem Content="妄想"/>
-                                    <ComboBoxItem Content="食べること"/>
-                                    <ComboBoxItem Content="料理"/>
-                                    <ComboBoxItem Content="歴史"/>
-                                    <ComboBoxItem Content="人助け"/>
-                                    <ComboBoxItem Content="切手集め"/>
-                                    <ComboBoxItem Content="占い"/>
-                                    <ComboBoxItem Content="茶道"/>
-                                    <ComboBoxItem Content="貯金"/>
-                                    <ComboBoxItem Content="釣り"/>
-                                    <ComboBoxItem Content="鉄道"/>
-                                    <ComboBoxItem Content="勉強"/>
-                                    <ComboBoxItem Content="盆栽"/>
-                                    <ComboBoxItem Content="手芸"/>
-                                    <ComboBoxItem Content="おしゃべり"/>
-                                    <ComboBoxItem Content="オシャレ"/>
-                                    <ComboBoxItem Content="おそうじ"/>
-                                    <ComboBoxItem Content="ダイエット"/>
-                                    <ComboBoxItem Content="ネイルアート"/>
-                                    <ComboBoxItem Content="ネコ"/>
-                                    <ComboBoxItem Content="イヌ"/>
-                                    <ComboBoxItem Content="ねること"/>
-                                    <ComboBoxItem Content="冒険"/>
-                                    <ComboBoxItem Content="レベル上げ"/>
-                                    <ComboBoxItem Content="錬金・"/>
-                                    <ComboBoxItem Content="しばりプレイ"/>
-                                    <ComboBoxItem Content="ぱふぱふ"/>
-                                    <ComboBoxItem Content="メタル狩り"/>
-                                    <ComboBoxItem Content="ルーレット"/>
-                                    <ComboBoxItem Content="ポーカー"/>
-                                    <ComboBoxItem Content="スロット"/>
-                                    <ComboBoxItem Content="ひとりキャンプ"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0283}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0284}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0285}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0286}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0287}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0288}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0289}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0290}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0291}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0292}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0293}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0294}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0295}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0296}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0297}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0298}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0299}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0300}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0301}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0302}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0303}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0304}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0305}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0306}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0307}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0308}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0309}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0310}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0311}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0312}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0313}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0314}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0315}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0316}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0317}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0318}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0319}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0320}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0321}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0322}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0323}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0324}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0325}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0326}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0327}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0328}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0329}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0184}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0330}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0331}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0332}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0333}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0334}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0335}"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="7" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassGraduate}">
-                                    <ComboBoxItem Content="ないしょ"/>
-                                    <ComboBoxItem Content="北海道"/>
-                                    <ComboBoxItem Content="青森"/>
-                                    <ComboBoxItem Content="岩手"/>
-                                    <ComboBoxItem Content="宮城"/>
-                                    <ComboBoxItem Content="秋田"/>
-                                    <ComboBoxItem Content="山形"/>
-                                    <ComboBoxItem Content="福島"/>
-                                    <ComboBoxItem Content="茨木"/>
-                                    <ComboBoxItem Content="栃木"/>
-                                    <ComboBoxItem Content="群馬"/>
-                                    <ComboBoxItem Content="埼玉"/>
-                                    <ComboBoxItem Content="千葉"/>
-                                    <ComboBoxItem Content="東京"/>
-                                    <ComboBoxItem Content="神奈川"/>
-                                    <ComboBoxItem Content="新潟"/>
-                                    <ComboBoxItem Content="山梨"/>
-                                    <ComboBoxItem Content="長野"/>
-                                    <ComboBoxItem Content="富山"/>
-                                    <ComboBoxItem Content="石川"/>
-                                    <ComboBoxItem Content="福井"/>
-                                    <ComboBoxItem Content="岐阜"/>
-                                    <ComboBoxItem Content="静岡"/>
-                                    <ComboBoxItem Content="愛知"/>
-                                    <ComboBoxItem Content="三重"/>
-                                    <ComboBoxItem Content="滋賀"/>
-                                    <ComboBoxItem Content="京都"/>
-                                    <ComboBoxItem Content="大阪"/>
-                                    <ComboBoxItem Content="兵庫"/>
-                                    <ComboBoxItem Content="奈良"/>
-                                    <ComboBoxItem Content="和歌山"/>
-                                    <ComboBoxItem Content="鳥取"/>
-                                    <ComboBoxItem Content="島根"/>
-                                    <ComboBoxItem Content="岡山"/>
-                                    <ComboBoxItem Content="広島"/>
-                                    <ComboBoxItem Content="山口"/>
-                                    <ComboBoxItem Content="徳島"/>
-                                    <ComboBoxItem Content="香川"/>
-                                    <ComboBoxItem Content="愛知"/>
-                                    <ComboBoxItem Content="高知"/>
-                                    <ComboBoxItem Content="福岡"/>
-                                    <ComboBoxItem Content="佐賀"/>
-                                    <ComboBoxItem Content="長崎"/>
-                                    <ComboBoxItem Content="熊本"/>
-                                    <ComboBoxItem Content="大分"/>
-                                    <ComboBoxItem Content="宮崎"/>
-                                    <ComboBoxItem Content="鹿児島"/>
-                                    <ComboBoxItem Content="沖縄"/>
-                                    <ComboBoxItem Content="アジア"/>
-                                    <ComboBoxItem Content="ヨーロッパ"/>
-                                    <ComboBoxItem Content="アフリカ"/>
-                                    <ComboBoxItem Content="アメリカ"/>
-                                    <ComboBoxItem Content="オセアニア"/>
-                                    <ComboBoxItem Content="南極"/>
-                                    <ComboBoxItem Content="いなか"/>
-                                    <ComboBoxItem Content="都会"/>
-                                    <ComboBoxItem Content="遠い国"/>
-                                    <ComboBoxItem Content="アレフガルド"/>
-                                    <ComboBoxItem Content="ロトゼタシア"/>
-                                    <ComboBoxItem Content="アストルティア"/>
-                                    <ComboBoxItem Content="ラダトーム"/>
-                                    <ComboBoxItem Content="ローレンシア"/>
-                                    <ComboBoxItem Content="アリアハン"/>
-                                    <ComboBoxItem Content="山奥の村"/>
-                                    <ComboBoxItem Content="サンタローズ"/>
-                                    <ComboBoxItem Content="ライフコッド"/>
-                                    <ComboBoxItem Content="フィッシュベル"/>
-                                    <ComboBoxItem Content="トラペッタ"/>
-                                    <ComboBoxItem Content="ウォルロ村"/>
-                                    <ComboBoxItem Content="エテーネの村"/>
-                                    <ComboBoxItem Content="イシの村"/>
-                                    <ComboBoxItem Content="ぱふぱふ小屋"/>
-                                    <ComboBoxItem Content="森の中"/>
-                                    <ComboBoxItem Content="こたつ"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0185}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0336}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0337}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0338}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0339}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0340}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0341}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0342}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0343}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0344}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0345}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0346}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0347}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0348}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0349}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0350}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0351}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0352}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0353}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0354}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0355}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0356}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0357}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0358}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0359}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0360}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0361}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0362}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0363}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0364}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0365}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0366}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0367}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0368}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0369}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0370}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0371}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0372}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0358}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0373}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0374}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0375}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0376}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0377}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0378}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0379}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0380}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0381}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0382}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0383}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0384}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0385}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0386}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0387}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0388}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0389}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0390}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0391}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0392}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0393}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0394}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0395}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0396}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0397}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0398}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0399}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0400}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0401}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0402}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0403}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0404}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0405}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0406}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0407}"/>
                                 </ComboBox>
                                 <ComboBox Grid.Row="8" Grid.Column="1" SelectedIndex="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassHistory}">
-                                    <ComboBoxItem Content="ないしょ"/>
-                                    <ComboBoxItem Content="みならい"/>
-                                    <ComboBoxItem Content="かけだし"/>
-                                    <ComboBoxItem Content="うできき"/>
-                                    <ComboBoxItem Content="れきせん"/>
-                                    <ComboBoxItem Content="ふるかぶ"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0185}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0408}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0409}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0410}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0411}"/>
+                                    <ComboBoxItem Content="{DynamicResource Str_0412}"/>
                                 </ComboBox>
                                 <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassMessage ,UpdateSourceTrigger=PropertyChanged}"/>
-                                <CheckBox Content="戦闘から逃げられない" Grid.Row="10" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassEscapeNG}"/>
-                                <CheckBox Content="買い物ができない" Grid.Row="11" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassShopNG}"/>
-                                <CheckBox Content="防具を装備できない" Grid.Row="12" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassArmorNG}"/>
-                                <CheckBox Content="はずかしい呪い" Grid.Row="13" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassAshamed}"/>
+                                <CheckBox Content="{DynamicResource Str_0413}" Grid.Row="10" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassEscapeNG}"/>
+                                <CheckBox Content="{DynamicResource Str_0414}" Grid.Row="11" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassShopNG}"/>
+                                <CheckBox Content="{DynamicResource Str_0415}" Grid.Row="12" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassArmorNG}"/>
+                                <CheckBox Content="{DynamicResource Str_0416}" Grid.Row="13" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ElementName=ListBoxYochi, Path=SelectedItem.PassAshamed}"/>
                             </Grid>
                         </TabItem>
                     </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem Header="帽子">
+            <TabItem Header="{DynamicResource Str_0417}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -1019,7 +1024,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="ヨッチ村">
+            <TabItem Header="{DynamicResource Str_0418}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -1031,7 +1036,7 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <DockPanel>
-                            <Label DockPanel.Dock="Top" Content="冒険の書の合言葉"/>
+                            <Label DockPanel.Dock="Top" Content="{DynamicResource Str_0419}"/>
                             <ListBox x:Name="ListBoxWatchWorld"/>
                         </DockPanel>
                         <Grid Grid.Row="1">
@@ -1069,53 +1074,53 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Label Content="状態"/>
+                        <Label Content="{DynamicResource Str_0420}"/>
                         <ComboBox Grid.Column="1" SelectedIndex="{Binding VillageState}">
-                            <ComboBoxItem Content="不在"/>
-                            <ComboBoxItem Content="初期"/>
-                            <ComboBoxItem Content="長老と話した"/>
-                            <ComboBoxItem Content="冒険の書収集中"/>
-                            <ComboBoxItem Content="祭壇奥開放"/>
-                            <ComboBoxItem Content="制覇"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0421}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0422}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0423}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0424}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0425}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0426}"/>
                         </ComboBox>
-                        <Label Grid.Row="1" Content="階層"/>
+                        <Label Grid.Row="1" Content="{DynamicResource Str_0427}"/>
                         <ComboBox Grid.Row="1" Grid.Column="1" SelectedIndex="{Binding VillageHierarchy}">
-                            <ComboBoxItem Content="1階層"/>
-                            <ComboBoxItem Content="2階層"/>
-                            <ComboBoxItem Content="3階層"/>
-                            <ComboBoxItem Content="4階層"/>
-                            <ComboBoxItem Content="5階層"/>
-                            <ComboBoxItem Content="6階層"/>
-                            <ComboBoxItem Content="7階層"/>
-                            <ComboBoxItem Content="8階層"/>
-                            <ComboBoxItem Content="9階層"/>
-                            <ComboBoxItem Content="10階層"/>
-                            <ComboBoxItem Content="全踏破"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0428}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0429}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0430}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0431}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0432}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0433}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0434}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0435}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0436}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0437}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0438}"/>
                         </ComboBox>
-                        <Label Grid.Row="3" Content="DQ1勇者の像"/>
+                        <Label Grid.Row="3" Content="{DynamicResource Str_0439}"/>
                         <CheckBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ1}"/>
-                        <Label Grid.Row="4" Content="DQ2勇者の像"/>
+                        <Label Grid.Row="4" Content="{DynamicResource Str_0440}"/>
                         <CheckBox Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ2}"/>
-                        <Label Grid.Row="5" Content="DQ3勇者の像"/>
+                        <Label Grid.Row="5" Content="{DynamicResource Str_0441}"/>
                         <CheckBox Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ3}"/>
-                        <Label Grid.Row="6" Content="DQ4勇者の像"/>
+                        <Label Grid.Row="6" Content="{DynamicResource Str_0442}"/>
                         <CheckBox Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ4}"/>
-                        <Label Grid.Row="7" Content="DQ5勇者の像"/>
+                        <Label Grid.Row="7" Content="{DynamicResource Str_0443}"/>
                         <CheckBox Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ5}"/>
-                        <Label Grid.Row="8" Content="DQ6勇者の像"/>
+                        <Label Grid.Row="8" Content="{DynamicResource Str_0444}"/>
                         <CheckBox Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ6}"/>
-                        <Label Grid.Row="9" Content="DQ7勇者の像"/>
+                        <Label Grid.Row="9" Content="{DynamicResource Str_0445}"/>
                         <CheckBox Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ7}"/>
-                        <Label Grid.Row="10" Content="DQ8勇者の像"/>
+                        <Label Grid.Row="10" Content="{DynamicResource Str_0446}"/>
                         <CheckBox Grid.Row="10" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ8}"/>
-                        <Label Grid.Row="11" Content="DQ9勇者の像"/>
+                        <Label Grid.Row="11" Content="{DynamicResource Str_0447}"/>
                         <CheckBox Grid.Row="11" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ9}"/>
-                        <Label Grid.Row="12" Content="DQ10勇者の像"/>
+                        <Label Grid.Row="12" Content="{DynamicResource Str_0448}"/>
                         <CheckBox Grid.Row="12" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding VillageDQ10}"/>
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="大修練場">
+            <TabItem Header="{DynamicResource Str_0449}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -1131,56 +1136,56 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Row="1" Content="最速スコア"/>
-                    <Label Grid.Row="2" Content="ごほうび"/>
-                    <Label Grid.Column="1" Content="壱の試練"/>
+                    <Label Grid.Row="1" Content="{DynamicResource Str_0450}"/>
+                    <Label Grid.Row="2" Content="{DynamicResource Str_0451}"/>
+                    <Label Grid.Column="1" Content="{DynamicResource Str_0452}"/>
                     <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding TrialFirstScore}"/>
                     <ComboBox Grid.Row="2" Grid.Column="1" SelectedIndex="{Binding TrialFirstStep}">
-                        <ComboBoxItem Content="未チャレンジ"/>
-                        <ComboBoxItem Content="初回クリア"/>
-                        <ComboBoxItem Content="16手以内"/>
-                        <ComboBoxItem Content="12手以内"/>
-                        <ComboBoxItem Content="8手以内"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0453}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0454}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0455}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0456}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0457}"/>
                     </ComboBox>
-                    <Label Grid.Column="2" Content="弐の試練"/>
+                    <Label Grid.Column="2" Content="{DynamicResource Str_0458}"/>
                     <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding TrialSecondScore}"/>
                     <ComboBox Grid.Row="2" Grid.Column="2" SelectedIndex="{Binding TrialSecondStep}">
-                        <ComboBoxItem Content="未チャレンジ"/>
-                        <ComboBoxItem Content="初回クリア"/>
-                        <ComboBoxItem Content="20手以内"/>
-                        <ComboBoxItem Content="15手以内"/>
-                        <ComboBoxItem Content="10手以内"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0453}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0454}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0459}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0460}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0461}"/>
                     </ComboBox>
-                    <Label Grid.Column="3" Content="参の試練"/>
+                    <Label Grid.Column="3" Content="{DynamicResource Str_0462}"/>
                     <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding TrialThirdScore}"/>
                     <ComboBox Grid.Row="2" Grid.Column="3" SelectedIndex="{Binding TrialThirdStep}">
-                        <ComboBoxItem Content="未チャレンジ"/>
-                        <ComboBoxItem Content="初回クリア"/>
-                        <ComboBoxItem Content="25手以内"/>
-                        <ComboBoxItem Content="20手以内"/>
-                        <ComboBoxItem Content="15手以内"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0453}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0454}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0463}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0459}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0460}"/>
                     </ComboBox>
-                    <Label Grid.Column="4" Content="四の試練"/>
+                    <Label Grid.Column="4" Content="{DynamicResource Str_0464}"/>
                     <TextBox Grid.Row="1" Grid.Column="4" Text="{Binding TrialFourScore}"/>
                     <ComboBox Grid.Row="2" Grid.Column="4" SelectedIndex="{Binding TrialFourStep}">
-                        <ComboBoxItem Content="未チャレンジ"/>
-                        <ComboBoxItem Content="初回クリア"/>
-                        <ComboBoxItem Content="30手以内"/>
-                        <ComboBoxItem Content="25手以内"/>
-                        <ComboBoxItem Content="20手以内"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0453}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0454}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0465}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0463}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0459}"/>
                     </ComboBox>
-                    <Label Grid.Column="5" Content="最終試練"/>
+                    <Label Grid.Column="5" Content="{DynamicResource Str_0466}"/>
                     <TextBox Grid.Row="1" Grid.Column="5" Text="{Binding TrialFinalScore}"/>
                     <ComboBox Grid.Row="2" Grid.Column="5" SelectedIndex="{Binding TrialFinalStep}">
-                        <ComboBoxItem Content="未チャレンジ"/>
-                        <ComboBoxItem Content="初回クリア"/>
-                        <ComboBoxItem Content="40手以内"/>
-                        <ComboBoxItem Content="35手以内"/>
-                        <ComboBoxItem Content="30手以内"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0453}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0454}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0467}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0468}"/>
+                        <ComboBoxItem Content="{DynamicResource Str_0465}"/>
                     </ComboBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="ふしぎな鍛冶">
+            <TabItem Header="{DynamicResource Str_0469}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -1201,7 +1206,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="アイテム収集">
+            <TabItem Header="{DynamicResource Str_0470}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="13*"/>
@@ -1222,7 +1227,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="すれちがい">
+            <TabItem Header="{DynamicResource Str_0471}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -1235,17 +1240,17 @@
                         <RowDefinition/>
                         <RowDefinition Height="12*"/>
                     </Grid.RowDefinitions>
-                    <Label Content="名前"/>
-                    <Label Content="メッセージ" Grid.Row="1"/>
-                    <Label Content="プロフィール" Grid.Row="2"/>
+                    <Label Content="{DynamicResource Str_0048}"/>
+                    <Label Content="{DynamicResource Str_0183}" Grid.Row="1"/>
+                    <Label Content="{DynamicResource Str_0175}" Grid.Row="2"/>
                     <ListBox Grid.Row="3">
-                        <ListBoxItem Content="称号"/>
-                        <ListBoxItem Content="性別"/>
-                        <ListBoxItem Content="年代"/>
-                        <ListBoxItem Content="出身地"/>
-                        <ListBoxItem Content="性格"/>
-                        <ListBoxItem Content="趣味"/>
-                        <ListBoxItem Content="ドラクエ歴"/>
+                        <ListBoxItem Content="{DynamicResource Str_0095}"/>
+                        <ListBoxItem Content="{DynamicResource Str_0177}"/>
+                        <ListBoxItem Content="{DynamicResource Str_0179}"/>
+                        <ListBoxItem Content="{DynamicResource Str_0181}"/>
+                        <ListBoxItem Content="{DynamicResource Str_0178}"/>
+                        <ListBoxItem Content="{DynamicResource Str_0180}"/>
+                        <ListBoxItem Content="{DynamicResource Str_0182}"/>
                     </ListBox>
                     <ListBox Grid.Row="3" Grid.Column="1">
                     </ListBox>
@@ -1255,7 +1260,7 @@
                     <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding PassMessage, UpdateSourceTrigger=PropertyChanged}"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="システム">
+            <TabItem Header="{DynamicResource Str_0472}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -1284,25 +1289,25 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Label Content="戦闘から逃げられない"/>
-                        <Label Content="買い物ができない" Grid.Row="1"/>
-                        <Label Content="防具を装備できない" Grid.Row="2"/>
-                        <Label Content="はずかしい呪い" Grid.Row="3"/>
-                        <Label Content="戦闘速度" Grid.Row="5"/>
+                        <Label Content="{DynamicResource Str_0413}"/>
+                        <Label Content="{DynamicResource Str_0414}" Grid.Row="1"/>
+                        <Label Content="{DynamicResource Str_0415}" Grid.Row="2"/>
+                        <Label Content="{DynamicResource Str_0416}" Grid.Row="3"/>
+                        <Label Content="{DynamicResource Str_0473}" Grid.Row="5"/>
                         <Label Content="BGM" Grid.Row="6"/>
-                        <Label Content="効果音" Grid.Row="7"/>
-                        <Label Content="カメラ回転" Grid.Row="8"/>
-                        <Label Content="Cスティック" Grid.Row="9"/>
-                        <Label Content="表示モード" Grid.Row="10"/>
+                        <Label Content="{DynamicResource Str_0474}" Grid.Row="7"/>
+                        <Label Content="{DynamicResource Str_0475}" Grid.Row="8"/>
+                        <Label Content="{DynamicResource Str_0476}" Grid.Row="9"/>
+                        <Label Content="{DynamicResource Str_0477}" Grid.Row="10"/>
 
                         <CheckBox Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding EscapeNG}"/>
                         <CheckBox Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding ShopNG}"/>
                         <CheckBox Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding ArmorNG}"/>
                         <CheckBox Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding Ashamed}"/>
                         <ComboBox Grid.Row="5" Grid.Column="1" SelectedIndex="{Binding BattleSpeed}">
-                            <ComboBoxItem Content="はやい"/>
-                            <ComboBoxItem Content="ふつう"/>
-                            <ComboBoxItem Content="おそい"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0478}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0224}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0479}"/>
                         </ComboBox>
                         <ComboBox Grid.Row="6" Grid.Column="1" SelectedIndex="{Binding BGMVolume}">
                             <ComboBoxItem Content="1"/>
@@ -1319,25 +1324,25 @@
                             <ComboBoxItem Content="5"/>
                         </ComboBox>
                         <ComboBox Grid.Row="8" Grid.Column="1" SelectedIndex="{Binding CameraRotate}">
-                            <ComboBoxItem Content="ノーマル"/>
-                            <ComboBoxItem Content="リバース"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0480}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0481}"/>
                         </ComboBox>
                         <ComboBox Grid.Row="9" Grid.Column="1" SelectedIndex="{Binding CStickRotate}">
-                            <ComboBoxItem Content="ノーマル"/>
-                            <ComboBoxItem Content="リバース"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0480}"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0481}"/>
                         </ComboBox>
                         <ComboBox Grid.Row="10" Grid.Column="1" SelectedIndex="{Binding ViewMode}">
                             <ComboBoxItem Content="2D"/>
                             <ComboBoxItem Content="3D"/>
-                            <ComboBoxItem Content="両方"/>
+                            <ComboBoxItem Content="{DynamicResource Str_0482}"/>
                         </ComboBox>
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="パッチコード">
+            <TabItem Header="{DynamicResource Str_0483}">
                 <DockPanel>
-                    <Label Content="0、1、2、4コードに対応" DockPanel.Dock="Top"/>
-                    <Button x:Name="ButtonPatchReflection" DockPanel.Dock="Bottom" Content="適応" Height="50" Click="ButtonPatchReflection_Click"/>
+                    <Label Content="{DynamicResource Str_0484}" DockPanel.Dock="Top"/>
+                    <Button x:Name="ButtonPatchReflection" DockPanel.Dock="Bottom" Content="{DynamicResource Str_0485}" Height="50" Click="ButtonPatchReflection_Click"/>
                     <TextBox x:Name="TextBoxPatchCode" AcceptsReturn="True"/>
                 </DockPanel>
             </TabItem>

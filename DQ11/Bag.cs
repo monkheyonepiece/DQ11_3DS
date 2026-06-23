@@ -40,7 +40,7 @@ namespace DQ11
 				grid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new System.Windows.GridLength(30) });
 
 				Button button = new Button();
-				button.Content = "削除";
+				button.Content = LocalizationManager.Get("Msg_Delete");
 				button.Tag = i;
 				button.Click += ButtonDelete_Click;
 				grid.Children.Add(button);

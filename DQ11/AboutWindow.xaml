@@ -8,7 +8,7 @@
         Title="Info" Height="113.592" Width="233.738" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel>
-            <Label Content="Creater ： カメムシ"/>
+            <Label Content="{DynamicResource Str_0491}"/>
             <Label x:Name="LabelHP" Content="HP ： http://turtleinsect.php.xdomain.jp/" MouseDown="LabelHP_MouseDown"/>
             <Label Content="Mail ： turtle.insect@gmail.com"/>
         </StackPanel>

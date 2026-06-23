@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DQ11"
         mc:Ignorable="d"
-        Title="アイテム選択" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="{DynamicResource Str_0486}" Height="300" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
         <DockPanel>
             <DockPanel DockPanel.Dock="Top">
-                <Label Content="フィルタ"/>
+                <Label Content="{DynamicResource Str_0487}"/>
                 <TextBox x:Name="TextBoxFilter" TextChanged="TextBoxFilter_TextChanged"/>
             </DockPanel>
             <Grid DockPanel.Dock="Bottom">
@@ -17,11 +17,11 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="ButtonDecision" Content="決定" IsEnabled="False" Click="ButtonDecision_Click"/>
-                <Button x:Name="ButtonCancel" Content="キャンセル" Grid.Column="1" IsCancel="True"/>
+                <Button x:Name="ButtonDecision" Content="{DynamicResource Str_0488}" IsEnabled="False" Click="ButtonDecision_Click"/>
+                <Button x:Name="ButtonCancel" Content="{DynamicResource Str_0489}" Grid.Column="1" IsCancel="True"/>
             </Grid>
             <DockPanel DockPanel.Dock="Bottom">
-                <Label Content="オプション"/>
+                <Label Content="{DynamicResource Str_0490}"/>
                 <ComboBox x:Name="ComboBoxOption" IsEnabled="False"/>
             </DockPanel>
             <ListBox x:Name="ListBoxItem" SelectionChanged="ListBoxItem_SelectionChanged"/>

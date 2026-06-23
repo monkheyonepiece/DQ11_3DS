@@ -78,6 +78,24 @@ namespace DQ11
 			mAllStatusList.Add(new Story(ListBoxStory, ButtonStoryCheck, ButtonStoryUnCheck));
 			
 			mAllStatusList.ForEach(x => x.Init());
+
+			UpdateLanguageMenu();
+		}
+
+		private void Lang_Click(object sender, RoutedEventArgs e)
+		{
+			var item = sender as System.Windows.Controls.MenuItem;
+			if (item == null) return;
+			LocalizationManager.SetLanguage((string)item.Tag);
+			UpdateLanguageMenu();
+		}
+
+		private void UpdateLanguageMenu()
+		{
+			string lang = LocalizationManager.CurrentLanguage;
+			LangEnglish.IsChecked = (lang == "en");
+			LangFrench.IsChecked = (lang == "fr");
+			LangJapanese.IsChecked = (lang == "ja");
 		}
 
 		private void Window_Drop(object sender, DragEventArgs e)
@@ -89,12 +107,12 @@ namespace DQ11
 			SaveData saveData = SaveData.Instance();
 			if (saveData.Open(files[0], false) == false)
 			{
-				MessageBox.Show("読込失敗");
+				MessageBox.Show(LocalizationManager.Get("Msg_LoadFail"));
 				return;
 			}
 
 			Init();
-			MessageBox.Show("読込成功");
+			MessageBox.Show(LocalizationManager.Get("Msg_LoadOk"));
 		}
 
 		private void Window_PreviewDragOver(object sender, DragEventArgs e)
@@ -134,8 +152,8 @@ namespace DQ11
 			SaveFileDialog dlg = new SaveFileDialog();
 			if (dlg.ShowDialog() == false) return;
 
-			if (SaveData.Instance().SaveAs(dlg.FileName) == true) MessageBox.Show("書込成功");
-			else MessageBox.Show("書込失敗");
+			if (SaveData.Instance().SaveAs(dlg.FileName) == true) MessageBox.Show(LocalizationManager.Get("Msg_SaveOk"));
+			else MessageBox.Show(LocalizationManager.Get("Msg_SaveFail"));
 		}
 
 		private void MenuItemExit_Click(object sender, RoutedEventArgs e)
@@ -338,7 +356,7 @@ namespace DQ11
 				String[] code = lines[i].Split(' ');
 				if(code.Length != 2)
 				{
-					MessageBox.Show((i + 1).ToString() + "行目に誤りがあります");
+					MessageBox.Show((i + 1).ToString() + LocalizationManager.Get("Msg_LineError"));
 					return;
 				}
 
@@ -361,7 +379,7 @@ namespace DQ11
 					case '4':
 						if(i + 1 >= lines.Length)
 						{
-							MessageBox.Show((i + 1).ToString() + "行目に誤りがあります");
+							MessageBox.Show((i + 1).ToString() + LocalizationManager.Get("Msg_LineError"));
 							return;
 						}
 						switch(code[1][0])
@@ -388,7 +406,7 @@ namespace DQ11
 						break;
 
 					default:
-						MessageBox.Show((i + 1).ToString() + "行目に解読不可の命令があります");
+						MessageBox.Show((i + 1).ToString() + LocalizationManager.Get("Msg_LineUndecodable"));
 						return;
 				}
 
@@ -398,7 +416,7 @@ namespace DQ11
 				}
 			}
 			Init();
-			MessageBox.Show("適応");
+			MessageBox.Show(LocalizationManager.Get("Msg_Apply"));
 		}
 
 		private void Load(bool force)
@@ -408,19 +426,19 @@ namespace DQ11
 
 			if (SaveData.Instance().Open(dlg.FileName, force) == false)
 			{
-				MessageBox.Show("読込失敗");
+				MessageBox.Show(LocalizationManager.Get("Msg_LoadFail"));
 				return;
 			}
 
 			Init();
-			MessageBox.Show("読込成功");
+			MessageBox.Show(LocalizationManager.Get("Msg_LoadOk"));
 		}
 
 		private void Save()
 		{
 			mAllStatusList.ForEach(x => x.Save());
-			if (SaveData.Instance().Save() == true) MessageBox.Show("書込成功");
-			else MessageBox.Show("書込失敗");
+			if (SaveData.Instance().Save() == true) MessageBox.Show(LocalizationManager.Get("Msg_SaveOk"));
+			else MessageBox.Show(LocalizationManager.Get("Msg_SaveFail"));
 		}
 
 		private void Init()

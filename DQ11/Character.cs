@@ -22,11 +22,11 @@ namespace DQ11
 				Item.Add(new CharItem(mBaseAddress + 0x24 + i * 2));
 			}
 
-			Status.Add(new CharStatus(mBaseAddress + 0x12, 7) { Name = "ゾーン" });
-			Status.Add(new CharStatus(mBaseAddress + 0x12, 1) { Name = "どく" });
-			Status.Add(new CharStatus(mBaseAddress + 0x12, 2) { Name = "のろい" });
-			Status.Add(new CharStatus(mBaseAddress + 0x12, 3) { Name = "のろい" });
-			Status.Add(new CharStatus(mBaseAddress + 0x12, 4) { Name = "しに" });
+			Status.Add(new CharStatus(mBaseAddress + 0x12, 7) { Name = LocalizationManager.Get("St_Zone") });
+			Status.Add(new CharStatus(mBaseAddress + 0x12, 1) { Name = LocalizationManager.Get("St_Poison") });
+			Status.Add(new CharStatus(mBaseAddress + 0x12, 2) { Name = LocalizationManager.Get("St_Curse") });
+			Status.Add(new CharStatus(mBaseAddress + 0x12, 3) { Name = LocalizationManager.Get("St_Curse") });
+			Status.Add(new CharStatus(mBaseAddress + 0x12, 4) { Name = LocalizationManager.Get("St_Death") });
 		}
 		public String Name
 		{
