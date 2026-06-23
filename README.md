@@ -1,5 +1,5 @@
-![DL Count](https://img.shields.io/github/downloads/turtle-insect/DQ11/total.svg)
-[![Build status](https://ci.appveyor.com/api/projects/status/88s05mxijfh619at?svg=true)](https://ci.appveyor.com/project/turtle-insect/dq11)
+![DL Count](https://img.shields.io/github/downloads/monkheyonepiece/DQ11_3ds/total.svg)
+[![Build status](https://ci.appveyor.com/api/projects/status/88s05mxijfh619at?svg=true)](https://ci.appveyor.com/project/monkheyonepiece/dq11-3ds)
 
 # Overview
 Save data editor in english, french and japanese for Dragon Quest XI (3DS).
