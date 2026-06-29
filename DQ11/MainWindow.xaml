@@ -31,14 +31,18 @@
                 <MenuItem x:Name="LangJapanese" Header="日本語" IsCheckable="True" Tag="ja" Click="Lang_Click"/>
             </MenuItem>
         </Menu>
-        <ToolBar Grid.Row="1">
-            <Button x:Name="ToolBarFileOpen" Width="32" Height="32" Click="ToolBarFileOpen_Click" ToolTip="{DynamicResource Str_0009}">
+        <DockPanel Grid.Row="1" Margin="3,2" LastChildFill="True">
+            <Button x:Name="ToolBarFileOpen" DockPanel.Dock="Left" Width="32" Height="32" Margin="0,0,2,0"
+                    Background="Transparent" BorderThickness="0" Click="ToolBarFileOpen_Click" ToolTip="{DynamicResource Str_0009}">
                 <Image Source="{StaticResource Open}"/>
             </Button>
-            <Button x:Name="ToolBarFileSave" Width="32" Height="32" Click="ToolBarFileSave_Click" ToolTip="{DynamicResource Str_0010}">
+            <Button x:Name="ToolBarFileSave" DockPanel.Dock="Left" Width="32" Height="32" Margin="0,0,8,0"
+                    Background="Transparent" BorderThickness="0" Click="ToolBarFileSave_Click" ToolTip="{DynamicResource Str_0010}">
                 <Image Source="{StaticResource Save}"/>
             </Button>
-        </ToolBar>
+            <TextBlock x:Name="TextBlockFilePath" VerticalAlignment="Center"
+                       TextTrimming="CharacterEllipsis" Text="{DynamicResource Str_0493}"/>
+        </DockPanel>
         <TabControl Grid.Row="2">
             <TabItem Header="{DynamicResource Str_0011}">
                 <Grid>
@@ -71,13 +75,13 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Label Content="{DynamicResource Str_0012}" Grid.RowSpan="3" VerticalAlignment="Center"/>
-                        <Label Content="{DynamicResource Str_0013}" Grid.Column="2"/>
-                        <Label Content="{DynamicResource Str_0014}"  Grid.Row="1" Grid.Column="2"/>
-                        <Label Content="{DynamicResource Str_0015}"  Grid.Row="2" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0013}" Grid.Column="1" Margin="51,0,124,1" Grid.Row="1"/>
+                        <Label Content="{DynamicResource Str_0014}"  Grid.Row="1" Grid.Column="1" Margin="127,1,32,1"/>
+                        <Label Content="{DynamicResource Str_0015}"  Grid.Row="1" Grid.Column="2" Margin="0,1,0,1"/>
                         <Label Content="{DynamicResource Str_0016}" Grid.Row="3"/>
-                        <Label Content="G" Grid.Row="3" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0492}" Grid.Row="3" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0017}" Grid.Row="4"/>
-                        <Label Content="G" Grid.Row="4" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0492}" Grid.Row="4" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0018}" Grid.Row="5"/>
                         <Label Content="{DynamicResource Str_0019}" Grid.Row="5" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0020}" Grid.Row="6"/>
@@ -88,13 +92,13 @@
                         <Label Content="{DynamicResource Str_0023}" Grid.Row="8" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0024}" Grid.Row="10"/>
                         <Label Content="{DynamicResource Str_0025}" Grid.Row="11"/>
-                        <TextBox Grid.Column="1" Text="{Binding PlayHour, UpdateSourceTrigger=PropertyChanged}"/>
-                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding PlayMinute, UpdateSourceTrigger=PropertyChanged}"/>
-                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding PlaySecond, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Grid.Column="1" Text="{Binding PlayHour, UpdateSourceTrigger=PropertyChanged}" Margin="0,37,156,1" Grid.RowSpan="2"/>
+                        <TextBox Grid.Column="1" Text="{Binding PlayMinute, UpdateSourceTrigger=PropertyChanged}" Margin="78,37,78,37" Grid.RowSpan="3"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding PlaySecond, UpdateSourceTrigger=PropertyChanged}" Margin="156,0,0,37" Grid.RowSpan="2"/>
                         <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding GoldHand, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding GoldBank, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding CasinoCoin, UpdateSourceTrigger=PropertyChanged}"/>
-                        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding SmallMedal, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding SmallMedal, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,37" Grid.RowSpan="2"/>
                         <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding DepositSmallMedal, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding RebuildJewel, UpdateSourceTrigger=PropertyChanged}"/>
                         <ComboBox Grid.Row="10" Grid.Column="1" SelectedIndex="{Binding Vehicle}">
@@ -138,7 +142,7 @@
                         <Label Content="{DynamicResource Str_0037}" Grid.Row="1"/>
                         <Label Content="{DynamicResource Str_0036}" Grid.Row="1" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0038}" Grid.Row="2"/>
-                        <Label Content="G" Grid.Row="2" Grid.Column="2"/>
+                        <Label Content="{DynamicResource Str_0492}" Grid.Row="2" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0039}" Grid.Row="3"/>
                         <Label Content="{DynamicResource Str_0019}" Grid.Row="3" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0040}" Grid.Row="4"/>
@@ -177,7 +181,7 @@
                         <ColumnDefinition Width="5"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <ListBox x:Name="ListBoxChar" ItemsSource="{Binding Char}" DisplayMemberPath="Name"/>
+                    <ListBox x:Name="ListBoxChar" ItemsSource="{Binding Char}" DisplayMemberPath="DisplayName"/>
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -482,7 +486,7 @@
                     </Grid.RowDefinitions>
                     <Label Content="{DynamicResource Str_0108}"/>
                     <Label Content="{DynamicResource Str_0109}" Grid.Column="1"/>
-                    <ListBox x:Name="ListBoxParty" Grid.Row="1" ItemsSource="{Binding Party.List}" DisplayMemberPath="Name"/>
+                    <ListBox x:Name="ListBoxParty" Grid.Row="1" ItemsSource="{Binding Party.List}" DisplayMemberPath="DisplayName"/>
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
@@ -507,19 +511,25 @@
                         </Button>
                     </Grid>
                     <StackPanel Grid.Row="1" Grid.Column="1">
-                        <ComboBox ItemsSource="{Binding ElementName=ListBoxChar, Path=Items}" DisplayMemberPath="Name" SelectedIndex="{Binding ElementName=ListBoxParty, Path=SelectedItem.ID}"/>
+                        <ComboBox ItemsSource="{Binding ElementName=ListBoxChar, Path=Items}" DisplayMemberPath="DisplayName" SelectedIndex="{Binding ElementName=ListBoxParty, Path=SelectedItem.ID}"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
             <TabItem Header="{DynamicResource Str_0110}">
                 <DockPanel>
-                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
-                        <RadioButton x:Name="RadioButtonAll" VerticalAlignment="Center" IsChecked="True" Content="{DynamicResource Str_0097}"/>
-                        <RadioButton x:Name="RadioButtonNone" VerticalAlignment="Center" Content="{DynamicResource Str_0111}"/>
-                        <RadioButton x:Name="RadioButtonHave" VerticalAlignment="Center" Content="{DynamicResource Str_0112}"/>
-                        <TextBox x:Name="TextBoxMonsterCount" Margin="10,0,0,0" Width="100" Text=""/>
-                        <Button x:Name="ButtonMonsterDecision" Content="{DynamicResource Str_0113}"/>
-                    </StackPanel>
+                    <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+                        <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                            <RadioButton x:Name="RadioButtonAll" VerticalAlignment="Center" IsChecked="True" Content="{DynamicResource Str_0097}"/>
+                            <RadioButton x:Name="RadioButtonNone" VerticalAlignment="Center" Content="{DynamicResource Str_0111}"/>
+                            <RadioButton x:Name="RadioButtonHave" VerticalAlignment="Center" Content="{DynamicResource Str_0112}"/>
+                            <TextBox x:Name="TextBoxMonsterCount" Margin="10,0,0,0" Width="100" Text=""/>
+                            <Button x:Name="ButtonMonsterDecision" Content="{DynamicResource Str_0113}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                            <TextBlock Text="{DynamicResource Str_0494}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                            <TextBox x:Name="TextBoxMonsterSearch" Width="160" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DockPanel>
                     <ScrollViewer>
                         <StackPanel x:Name="StackPanelMonster"/>
                     </ScrollViewer>
