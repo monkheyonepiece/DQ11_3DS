@@ -21,6 +21,9 @@ namespace DQ11
 
 		public static string CurrentLanguage { get; private set; } = DefaultLang;
 
+		/// <summary>Levé à la fin de SetLanguage, après superposition du dictionnaire.</summary>
+		public static event Action LanguageChanged;
+
 		private static string ConfigPath
 		{
 			get { return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lang.config"); }
@@ -60,6 +63,7 @@ namespace DQ11
 
 			CurrentLanguage = lang;
 			try { File.WriteAllText(ConfigPath, lang); } catch { }
+			LanguageChanged?.Invoke();
 		}
 
 		/// <summary>Pour le code-behind : récupère une chaîne par sa clé.</summary>

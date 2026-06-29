@@ -492,6 +492,10 @@
     <s:String x:Key="Str_0489">キャンセル</s:String>
     <s:String x:Key="Str_0490">オプション</s:String>
     <s:String x:Key="Str_0491">Creater ： カメムシ</s:String>
+    <s:String x:Key="Str_0492">G</s:String>
+    <s:String x:Key="Str_0493">セーブデータは読み込まれませんでした</s:String>
+    <s:String x:Key="Str_0494">検索</s:String>
+    <s:String x:Key="Str_0495">Lv</s:String>
 
     <!-- Messages (code-behind) -->
     <s:String x:Key="Msg_LoadOk">読込成功</s:String>
@@ -507,4 +511,27 @@
     <s:String x:Key="St_Poison">どく</s:String>
     <s:String x:Key="St_Curse">のろい</s:String>
     <s:String x:Key="St_Death">しに</s:String>
+
+    <!-- Character display names -->
+    <s:String x:Key="Char_Erik">カミュ</s:String>
+    <s:String x:Key="Char_Veronica">ベロニカ</s:String>
+    <s:String x:Key="Char_Serena">セーニャ</s:String>
+    <s:String x:Key="Char_Sylvando">シルビア</s:String>
+    <s:String x:Key="Char_Rab">ロウ</s:String>
+    <s:String x:Key="Char_Jade">マルティナ</s:String>
+    <s:String x:Key="Char_Hendrik">グレイグ</s:String>
+    <s:String x:Key="Char_Sandy">ルキ</s:String>
+    <s:String x:Key="Char_Emma">エマ</s:String>
+    <s:String x:Key="Char_Connie">ルコ</s:String>
+    <s:String x:Key="Char_VinceVanquish">ハンフリー</s:String>
+    <s:String x:Key="Char_MysteriousGuy">謎の青年</s:String>
+    <s:String x:Key="Char_Snorri">エッケハルト</s:String>
+    <s:String x:Key="Char_Dog">犬</s:String>
+    <s:String x:Key="Char_Kainui">キナイ</s:String>
+    <s:String x:Key="Char_Da">バハトラ</s:String>
+    <s:String x:Key="Char_Son">チェロン</s:String>
+    <s:String x:Key="Char_Atsuo">テバ</s:String>
+    <s:String x:Key="Char_Lama">サンポ</s:String>
+    <s:String x:Key="Char_KingIrwin">アーウィン</s:String>
+    <s:String x:Key="Char_Ickle">クルッチ</s:String>
 </ResourceDictionary>

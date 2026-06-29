@@ -14,6 +14,30 @@ namespace DQ11
 			mQuest = quest;
 			mBase = combo;
 			patch.Click += Patch_Click;
+			// Les options d'état sont copiées en texte (pas en DynamicResource) :
+			// on les reconstruit au changement de langue, en gardant la sélection.
+			LocalizationManager.LanguageChanged += RefreshStatusLabels;
+		}
+
+		/// <summary>
+		/// Recopie les libellés d'état (à jour) depuis la ComboBox modèle dans
+		/// chaque ComboBox de quête, sans perdre l'état sélectionné.
+		/// </summary>
+		private void RefreshStatusLabels()
+		{
+			foreach (var pair in mStatus)
+			{
+				ComboBox status = pair.Value;
+				int selected = status.SelectedIndex;
+				status.Items.Clear();
+				foreach (var obj in mBase.Items)
+				{
+					ComboBoxItem item = obj as ComboBoxItem;
+					if (item == null) continue;
+					status.Items.Add(item.Content);
+				}
+				status.SelectedIndex = selected;
+			}
 		}
 
 		public override void Init()

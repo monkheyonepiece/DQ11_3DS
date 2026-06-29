@@ -23,6 +23,31 @@ namespace DQ11
 		public MainWindow()
 		{
 			InitializeComponent();
+			// Abonnement unique (durée de vie = fenêtre) : pas de fuite, et le
+			// DataContext recréé à chaque chargement est relu à chaud dans le handler.
+			LocalizationManager.LanguageChanged += OnLanguageChanged;
+		}
+
+		/// <summary>
+		/// Rafraîchit le nom AFFICHÉ des personnages (onglet Character et onglet Party)
+		/// lors d'un changement de langue, sans recharger ni perdre la sélection.
+		/// </summary>
+		private void OnLanguageChanged()
+		{
+			// Re-localise le libellé "aucun fichier" même si aucune save n'est chargée.
+			UpdateFilePathDisplay();
+
+			DataContext context = DataContext as DataContext;
+			if (context == null) return;
+
+			foreach (Character ch in context.Char)
+			{
+				ch.RefreshDisplayName();
+			}
+			foreach (IListItem item in context.Party.List)
+			{
+				(item as Party)?.RefreshDisplayName();
+			}
 		}
 
 		private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -37,7 +62,7 @@ namespace DQ11
 			mAllStatusList.Add(new Technique(ListBoxTechnique, ButtonTechniqueCheck, ButtonTechniqueUnCheck));
 
 			// モンスター図鑑.
-			mAllStatusList.Add(new Monster(StackPanelMonster, RadioButtonAll, RadioButtonNone, RadioButtonHave, TextBoxMonsterCount, ButtonMonsterDecision));
+			mAllStatusList.Add(new Monster(StackPanelMonster, RadioButtonAll, RadioButtonNone, RadioButtonHave, TextBoxMonsterCount, ButtonMonsterDecision, TextBoxMonsterSearch));
 
 			// ふくろ.
 			mBagTool = new Bag(mAllStatusList, StackPanelBagTool, ItemSelectWindow.eType.Tool, ComboBoxBagToolPage, Util.BagToolStartAddress, Util.BagToolCount);
@@ -80,6 +105,7 @@ namespace DQ11
 			mAllStatusList.ForEach(x => x.Init());
 
 			UpdateLanguageMenu();
+			UpdateFilePathDisplay();
 		}
 
 		private void Lang_Click(object sender, RoutedEventArgs e)
@@ -152,7 +178,11 @@ namespace DQ11
 			SaveFileDialog dlg = new SaveFileDialog();
 			if (dlg.ShowDialog() == false) return;
 
-			if (SaveData.Instance().SaveAs(dlg.FileName) == true) MessageBox.Show(LocalizationManager.Get("Msg_SaveOk"));
+			if (SaveData.Instance().SaveAs(dlg.FileName) == true)
+			{
+				UpdateFilePathDisplay();
+				MessageBox.Show(LocalizationManager.Get("Msg_SaveOk"));
+			}
 			else MessageBox.Show(LocalizationManager.Get("Msg_SaveFail"));
 		}
 
@@ -445,6 +475,57 @@ namespace DQ11
 		{
 			DataContext = new DataContext();
 			mAllStatusList.ForEach(x => x.Open());
+			UpdateFilePathDisplay();
+		}
+
+		/// <summary>
+		/// Affiche le chemin complet de la save chargée dans la barre d'outils,
+		/// ou le libellé "aucun fichier" (localisé) si aucune n'est chargée.
+		/// </summary>
+		private void UpdateFilePathDisplay()
+		{
+			if (TextBlockFilePath == null) return;
+			string path = SaveData.Instance().FileName;
+			if (String.IsNullOrEmpty(path))
+			{
+				TextBlockFilePath.Text = LocalizationManager.Get("Str_0493");
+				TextBlockFilePath.ToolTip = null;
+			}
+			else
+			{
+				TextBlockFilePath.Text = ShortenPath(path);
+				TextBlockFilePath.ToolTip = path;   // chemin complet au survol
+			}
+		}
+
+		/// <summary>
+		/// Réduit un chemin à "…\grand-parent\parent\fichier". Le préfixe "…"
+		/// n'est ajouté que s'il existe des dossiers au-dessus du grand-parent.
+		/// </summary>
+		private static string ShortenPath(string fullPath)
+		{
+			try
+			{
+				string file = System.IO.Path.GetFileName(fullPath);
+				string parent = System.IO.Path.GetDirectoryName(fullPath);
+				string parentName = System.IO.Path.GetFileName(parent);
+				string grand = System.IO.Path.GetDirectoryName(parent);
+				string grandName = System.IO.Path.GetFileName(grand);
+
+				var parts = new List<string>();
+				if (!String.IsNullOrEmpty(grandName)) parts.Add(grandName);
+				if (!String.IsNullOrEmpty(parentName)) parts.Add(parentName);
+				parts.Add(file);
+				string tail = String.Join("\\", parts);
+
+				bool hasMore = !String.IsNullOrEmpty(grand)
+					&& !String.IsNullOrEmpty(System.IO.Path.GetDirectoryName(grand));
+				return hasMore ? "…\\" + tail : tail;
+			}
+			catch
+			{
+				return fullPath;
+			}
 		}
 
 		private void CreateHat(List<AllStatus> status, StackPanel panel)
@@ -539,5 +620,10 @@ namespace DQ11
 				}
 			}
 		}
-	}
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+    }
 }

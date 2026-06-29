@@ -75,9 +75,6 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Label Content="{DynamicResource Str_0012}" Grid.RowSpan="3" VerticalAlignment="Center"/>
-                        <Label Content="{DynamicResource Str_0013}" Grid.Column="1" Margin="51,0,124,1" Grid.Row="1"/>
-                        <Label Content="{DynamicResource Str_0014}"  Grid.Row="1" Grid.Column="1" Margin="127,1,32,1"/>
-                        <Label Content="{DynamicResource Str_0015}"  Grid.Row="1" Grid.Column="2" Margin="0,1,0,1"/>
                         <Label Content="{DynamicResource Str_0016}" Grid.Row="3"/>
                         <Label Content="{DynamicResource Str_0492}" Grid.Row="3" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0017}" Grid.Row="4"/>
@@ -92,9 +89,14 @@
                         <Label Content="{DynamicResource Str_0023}" Grid.Row="8" Grid.Column="2"/>
                         <Label Content="{DynamicResource Str_0024}" Grid.Row="10"/>
                         <Label Content="{DynamicResource Str_0025}" Grid.Row="11"/>
-                        <TextBox Grid.Column="1" Text="{Binding PlayHour, UpdateSourceTrigger=PropertyChanged}" Margin="0,37,156,1" Grid.RowSpan="2"/>
-                        <TextBox Grid.Column="1" Text="{Binding PlayMinute, UpdateSourceTrigger=PropertyChanged}" Margin="78,37,78,37" Grid.RowSpan="3"/>
-                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding PlaySecond, UpdateSourceTrigger=PropertyChanged}" Margin="156,0,0,37" Grid.RowSpan="2"/>
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.RowSpan="3" Grid.Column="1" VerticalAlignment="Center">
+                            <TextBox Width="40" Height="24" VerticalAlignment="Center" Text="{Binding PlayHour, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label Content="{DynamicResource Str_0013}" VerticalAlignment="Center" Margin="3,0,10,0"/>
+                            <TextBox Width="40" Height="24" VerticalAlignment="Center" Text="{Binding PlayMinute, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label Content="{DynamicResource Str_0014}" VerticalAlignment="Center" Margin="3,0,10,0"/>
+                            <TextBox Width="40" Height="24" VerticalAlignment="Center" Text="{Binding PlaySecond, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label Content="{DynamicResource Str_0015}" VerticalAlignment="Center" Margin="3,0,0,0"/>
+                        </StackPanel>
                         <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding GoldHand, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding GoldBank, UpdateSourceTrigger=PropertyChanged}"/>
                         <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding CasinoCoin, UpdateSourceTrigger=PropertyChanged}"/>
@@ -208,7 +210,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <Label Content="{DynamicResource Str_0048}"/>
-                        <Label Content="Lv" Grid.Row="1"/>
+                        <Label Content="{DynamicResource Str_0495}" Grid.Row="1"/>
                         <Label Content="{DynamicResource Str_0049}" Grid.Row="2"/>
                         <Label Content="{DynamicResource Str_0050}" Grid.Row="3"/>
                         <Label Content="{DynamicResource Str_0051}" Grid.Row="4"/>
@@ -740,7 +742,7 @@
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
                                 <Label Content="{DynamicResource Str_0095}"/>
-                                <Label Content="Lv" Grid.Row="1"/>
+                                <Label Content="{DynamicResource Str_0495}" Grid.Row="1"/>
                                 <Label Content="{DynamicResource Str_0176}" Grid.Row="2"/>
                                 <Label Content="{DynamicResource Str_0177}" Grid.Row="3"/>
                                 <Label Content="{DynamicResource Str_0178}" Grid.Row="4"/>
@@ -1280,7 +1282,7 @@
                     <Grid Grid.Column="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="59.667"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -1299,49 +1301,49 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Label Content="{DynamicResource Str_0413}"/>
-                        <Label Content="{DynamicResource Str_0414}" Grid.Row="1"/>
-                        <Label Content="{DynamicResource Str_0415}" Grid.Row="2"/>
+                        <Label Content="{DynamicResource Str_0413}" Margin="0,0,0,38" Grid.RowSpan="2"/>
+                        <Label Content="{DynamicResource Str_0414}" Grid.Row="1" Margin="0,0,0,38" Grid.RowSpan="2"/>
+                        <Label Content="{DynamicResource Str_0415}" Grid.Row="2" Margin="0,0,0,37" Grid.RowSpan="2"/>
                         <Label Content="{DynamicResource Str_0416}" Grid.Row="3"/>
-                        <Label Content="{DynamicResource Str_0473}" Grid.Row="5"/>
-                        <Label Content="BGM" Grid.Row="6"/>
-                        <Label Content="{DynamicResource Str_0474}" Grid.Row="7"/>
-                        <Label Content="{DynamicResource Str_0475}" Grid.Row="8"/>
-                        <Label Content="{DynamicResource Str_0476}" Grid.Row="9"/>
-                        <Label Content="{DynamicResource Str_0477}" Grid.Row="10"/>
+                        <Label Content="{DynamicResource Str_0473}" Grid.Row="4" Margin="0,38,0,0" Grid.RowSpan="2"/>
+                        <Label Content="BGM" Grid.Row="5" Margin="0,38,0,0" Grid.RowSpan="2"/>
+                        <Label Content="{DynamicResource Str_0474}" Grid.Row="6" Margin="0,38,0,38" Grid.RowSpan="3"/>
+                        <Label Content="{DynamicResource Str_0475}" Grid.Row="8" Margin="0,0,0,38" Grid.RowSpan="2"/>
+                        <Label Content="{DynamicResource Str_0476}" Grid.Row="9" Margin="0,0,0,38" Grid.RowSpan="2"/>
+                        <Label Content="{DynamicResource Str_0477}" Grid.Row="10" Margin="0,0,0,37" Grid.RowSpan="2"/>
 
-                        <CheckBox Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding EscapeNG}"/>
-                        <CheckBox Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding ShopNG}"/>
-                        <CheckBox Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding ArmorNG}"/>
-                        <CheckBox Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding Ashamed}"/>
-                        <ComboBox Grid.Row="5" Grid.Column="1" SelectedIndex="{Binding BattleSpeed}">
+                        <CheckBox Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding EscapeNG}" Height="15" Width="16"/>
+                        <CheckBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding ShopNG}" Height="15" Width="16"/>
+                        <CheckBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding ArmorNG}" Height="15" Width="16"/>
+                        <CheckBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding Ashamed}" Height="15" Width="16"/>
+                        <ComboBox Grid.Row="4" Grid.Column="1" SelectedIndex="{Binding BattleSpeed}" Margin="0,38,-60,0" Grid.RowSpan="2">
                             <ComboBoxItem Content="{DynamicResource Str_0478}"/>
                             <ComboBoxItem Content="{DynamicResource Str_0224}"/>
                             <ComboBoxItem Content="{DynamicResource Str_0479}"/>
                         </ComboBox>
-                        <ComboBox Grid.Row="6" Grid.Column="1" SelectedIndex="{Binding BGMVolume}">
+                        <ComboBox Grid.Row="5" Grid.Column="1" SelectedIndex="{Binding BGMVolume}" Margin="0,38,-60,0" Grid.RowSpan="2">
                             <ComboBoxItem Content="1"/>
                             <ComboBoxItem Content="2"/>
                             <ComboBoxItem Content="3"/>
                             <ComboBoxItem Content="4"/>
                             <ComboBoxItem Content="5"/>
                         </ComboBox>
-                        <ComboBox Grid.Row="7" Grid.Column="1" SelectedIndex="{Binding SEVolume}">
+                        <ComboBox Grid.Row="6" Grid.Column="1" SelectedIndex="{Binding SEVolume}" Margin="0,38,-60,38" Grid.RowSpan="3">
                             <ComboBoxItem Content="1"/>
                             <ComboBoxItem Content="2"/>
                             <ComboBoxItem Content="3"/>
                             <ComboBoxItem Content="4"/>
                             <ComboBoxItem Content="5"/>
                         </ComboBox>
-                        <ComboBox Grid.Row="8" Grid.Column="1" SelectedIndex="{Binding CameraRotate}">
+                        <ComboBox Grid.Row="8" Grid.Column="1" SelectedIndex="{Binding CameraRotate}" Margin="0,0,-60,38" Grid.RowSpan="2">
                             <ComboBoxItem Content="{DynamicResource Str_0480}"/>
                             <ComboBoxItem Content="{DynamicResource Str_0481}"/>
                         </ComboBox>
-                        <ComboBox Grid.Row="9" Grid.Column="1" SelectedIndex="{Binding CStickRotate}">
+                        <ComboBox Grid.Row="9" Grid.Column="1" SelectedIndex="{Binding CStickRotate}" Margin="0,0,-60,38" Grid.RowSpan="2">
                             <ComboBoxItem Content="{DynamicResource Str_0480}"/>
                             <ComboBoxItem Content="{DynamicResource Str_0481}"/>
                         </ComboBox>
-                        <ComboBox Grid.Row="10" Grid.Column="1" SelectedIndex="{Binding ViewMode}">
+                        <ComboBox Grid.Row="10" Grid.Column="1" SelectedIndex="{Binding ViewMode}" Margin="0,0,-60,37" Grid.RowSpan="2">
                             <ComboBoxItem Content="2D"/>
                             <ComboBoxItem Content="3D"/>
                             <ComboBoxItem Content="{DynamicResource Str_0482}"/>

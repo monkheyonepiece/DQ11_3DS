@@ -19,6 +19,21 @@ namespace DQ11
 				return mChars[ID].Name;
 			}
 		}
+
+		/// <summary>Nom d'affichage traduit, délégué au Character occupant ce slot.</summary>
+		public String DisplayName
+		{
+			get
+			{
+				return mChars[ID].DisplayName;
+			}
+		}
+
+		/// <summary>Notifie l'UI que DisplayName a pu changer (bascule de langue).</summary>
+		public void RefreshDisplayName()
+		{
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("DisplayName"));
+		}
 		public int ID
 		{
 			get
@@ -31,6 +46,7 @@ namespace DQ11
 				SaveData.Instance().WriteNumber(mBaseAddress, mSize, (uint)value);
 				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ID"));
 				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
+				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("DisplayName"));
 			}
 		}
 		public Party(ObservableCollection<Character> chars, uint address)

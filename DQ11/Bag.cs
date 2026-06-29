@@ -11,6 +11,7 @@ namespace DQ11
 		private ItemSelectWindow.eType mType;
 		protected uint mAddress;
 		protected readonly List<AllStatus> mItems = new List<AllStatus>();
+		private readonly List<Button> mDeleteButtons = new List<Button>();
 
 		public Bag(List<AllStatus> status, Panel panel, ItemSelectWindow.eType type, ComboBox page, uint address, uint max)
 		{
@@ -27,6 +28,17 @@ namespace DQ11
 			}
 			page.SelectedIndex = 0;
 			CreateComp(status, panel);
+
+			// Le libellé "Delete" est résolu en code (pas en DynamicResource) :
+			// on le rafraîchit au changement de langue.
+			LocalizationManager.LanguageChanged += RefreshLabels;
+		}
+
+		/// <summary>Met à jour le libellé des boutons "Delete" selon la langue active.</summary>
+		private void RefreshLabels()
+		{
+			string label = LocalizationManager.Get("Msg_Delete");
+			mDeleteButtons.ForEach(b => b.Content = label);
 		}
 
 		public void CreateComp(List<AllStatus> status, Panel panel)
@@ -44,6 +56,7 @@ namespace DQ11
 				button.Tag = i;
 				button.Click += ButtonDelete_Click;
 				grid.Children.Add(button);
+				mDeleteButtons.Add(button);   // pour rafraîchir le libellé au changement de langue
 
 				button = new Button();
 				button.SetValue(Grid.ColumnProperty, 1);

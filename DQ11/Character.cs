@@ -11,6 +11,36 @@ namespace DQ11
 
 		public event PropertyChangedEventHandler PropertyChanged;
 
+		// Noms d'origine japonais -> clé i18n (Char_*). Table d'AFFICHAGE uniquement,
+		// jamais écrite dans la save. Point d'extension : ajouter ici les invités
+		// (ハンフリー, ルキ, ルコ, エッケンハルト, ...) avec leur clé Char_*,
+		// puis déclarer la clé dans les trois Strings.*.xaml.
+		private static readonly Dictionary<string, string> mDisplayNameKeys =
+			new Dictionary<string, string>
+		{
+			{ "カミュ",     "Char_Erik" },
+			{ "ベロニカ",   "Char_Veronica" },
+			{ "セーニャ",   "Char_Serena" },
+			{ "シルビア",   "Char_Sylvando" },
+			{ "ロウ",       "Char_Rab" },
+			{ "マルティナ", "Char_Jade" },
+			{ "グレイグ",   "Char_Hendrik" },
+			{ "ルキ",       "Char_Sandy" },
+			{ "エマ",       "Char_Emma" },
+			{ "ルコ",       "Char_Connie" },
+			{ "ハンフリー",  "Char_VinceVanquish" },
+			{ "謎の青年",    "Char_MysteriousGuy" },
+			{ "エッケハルト","Char_Snorri" },
+			{ "犬",         "Char_Dog" },
+			{ "キナイ",     "Char_Kainui" },
+			{ "バハトラ",   "Char_Da" },
+			{ "チェロン",   "Char_Son" },
+			{ "テバ",       "Char_Atsuo" },
+			{ "サンポ",     "Char_Lama" },
+			{ "アーウィン", "Char_KingIrwin" },
+			{ "クルッチ",   "Char_Ickle" },
+		};
+
 		public ObservableCollection<CharItem> Item { get; set; } = new ObservableCollection<CharItem>();
 		public List<CharStatus> Status { get; set; } = new List<CharStatus>();
 
@@ -38,6 +68,32 @@ namespace DQ11
 			{
 				SaveData.Instance().WriteUnicode(mBaseAddress + 0x02, 12, value);
 			}
+		}
+
+		/// <summary>
+		/// Nom d'AFFICHAGE traduit (lecture seule). Si le nom brut de la save est
+		/// un nom d'origine connu, renvoie sa traduction selon la langue active ;
+		/// sinon (héros, nom déjà édité) renvoie le nom brut tel quel.
+		/// N'écrit jamais dans la save.
+		/// </summary>
+		public String DisplayName
+		{
+			get
+			{
+				string raw = Name;
+				string key;
+				if (raw != null && mDisplayNameKeys.TryGetValue(raw, out key))
+				{
+					return LocalizationManager.Get(key);
+				}
+				return raw;
+			}
+		}
+
+		/// <summary>Notifie l'UI que DisplayName a pu changer (bascule de langue).</summary>
+		public void RefreshDisplayName()
+		{
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("DisplayName"));
 		}
 
 		public uint Lv

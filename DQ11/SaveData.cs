@@ -18,6 +18,12 @@ namespace DQ11
 			return mThis;
 		}
 
+		/// <summary>Chemin complet du fichier chargé, ou null si aucun.</summary>
+		public String FileName
+		{
+			get { return mFileName; }
+		}
+
 		public bool Open(String filename, bool force)
 		{
 			mFileName = filename;
