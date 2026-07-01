@@ -25,6 +25,11 @@ namespace DQ11
 			}
 		}
 
+		public override void ReloadNames()
+		{
+			RepokeItems(mList);
+		}
+
 		public override void Open()
 		{
 			SaveData saveData = SaveData.Instance();

@@ -1,0 +1,91 @@
+#ID	名前
+0	The People's Friend
+1	The Soldier and the Strategist - A Tale of Two Heroes
+2	Amelia's in a Pickle!
+3	It Takes Two to Tango
+4	Put a Ring on It
+5	Smiths and Sparkly Spots
+6	A Walk on the Wild Side
+7	A Cactus Cutlet to Die For
+8	A Lovely Letter
+9	An Even Lovelier Letter
+10	A Path to Paradise
+11	Skincare for the Fierce and Fabulous
+12	The Shadow
+13	Anything for Love
+14	Shiver me Timbers!
+15	A Rush of Blood
+16	Worth Its Salt
+17	Light It Up
+18	A Memorable Mystery
+19	Making Things Right
+20	The Agony and the Ecstasy
+21	A Right Riddle
+22	The Measure of a Man
+23	My Secret Saint
+24	Up Where they Walk
+25	A Cold Crush
+26	The Viking Hoard
+27	Planting Seeds for the Future
+28	Fit as a Fiddle
+29	Understanding Angri-La
+30	Pointless Pride
+31	When Knight Falls
+32	One Last Request
+33	A Delayed Diploma
+34	Madame Labouche's Life Lesson
+35	A Fragrant Fille
+36	Some Like it Hotto
+37	A Rose Arose Where No Rose Grows
+38	The Search for the Sage's Stone
+39	Soothing Seaweed
+40	My Kingdom for Some Kanaloamari
+41	A Little Bit Of Lantern
+42	A Ballad of Bravery
+43	Sweet Dreams
+44	Richie's Rock-Hard Roulette Challenge
+45	Marking a Momentous Occasion
+46	Justice is Brined
+47	A Dish Served Cold
+48	A Long-Lost Literary Love
+49	Might Is Right!
+50	Mistress Bev's Perfect Prediction
+51	Now You See Me...
+52	The Legendary Treasure of Legend
+53	Perfectly Pepped Paladins
+54	A Little Kindness Goes a Long Way
+55	Morcant's Mastery of Magic
+56	The Holiest of Harps
+57	Wisdom of the Warrior King
+58	Lost Lovers
+59	The People's Friend (2nd time)
+60	Ghosts of a Golden Age
+61	Curse Got Your Tongue?
+62	The Harp-Hearkened Horrors
+63	A Robbery in Rendarak
+64	A Cannockian Conundrum
+65	Curing the Curse of the Curs
+66	Bringing Back the Big Bad
+67	The Big Bad's Back Anyway!
+68	An Endangered Engagement
+69	Fiery Feverfew Seeds
+70	For Eliza
+71	A Rosy Revelation
+72	One of Doze Days
+73	Cold Comfort
+74	The Bane of the Briscolettis
+75	Horsing About
+76	A Fishy Fashion Fan
+77	Fogies Just Wanna Have Fun
+78	Rainbow Rock Ruckus
+79	Come On, Kiefer!
+80	No Music, No Life
+81	A Worrying Window
+82	One Crazy Cat
+83	Mother Knows Best
+84	Mad About Maps
+85	Innfinite Potential
+86	Go Fygger
+87	Galapagone
+88	Rebirth Rebuffed
+89	　

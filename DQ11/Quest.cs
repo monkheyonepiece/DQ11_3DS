@@ -14,9 +14,16 @@ namespace DQ11
 			mQuest = quest;
 			mBase = combo;
 			patch.Click += Patch_Click;
-			// Les options d'état sont copiées en texte (pas en DynamicResource) :
-			// on les reconstruit au changement de langue, en gardant la sélection.
-			LocalizationManager.LanguageChanged += RefreshStatusLabels;
+		}
+
+		/// <summary>
+		/// Changement de langue : noms de quêtes (re-poke) + options d'état (recopie).
+		/// Appelé via mAllStatusList après Item.Reload().
+		/// </summary>
+		public override void ReloadNames()
+		{
+			RepokeItems(mQuest);
+			RefreshStatusLabels();
 		}
 
 		/// <summary>
@@ -60,7 +67,7 @@ namespace DQ11
 
 				Label label = new Label();
 				label.VerticalAlignment = System.Windows.VerticalAlignment.Center;
-				label.Content = info.Name;
+				label.Content = info;   // objet ItemInfo (ToString = Name) -> rafraîchissable
 				panel.Children.Add(label);
 				mQuest.Items.Add(panel);
 			}

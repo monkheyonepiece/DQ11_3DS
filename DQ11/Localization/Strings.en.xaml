@@ -110,7 +110,7 @@
     <s:String x:Key="Str_0107">Party</s:String>
     <s:String x:Key="Str_0108">List</s:String>
     <s:String x:Key="Str_0109">Target</s:String>
-    <s:String x:Key="Str_0110">Monster List</s:String>
+    <s:String x:Key="Str_0110">Bestiary</s:String>
     <s:String x:Key="Str_0111">Defeated: 0</s:String>
     <s:String x:Key="Str_0112">Defeated: not 0</s:String>
     <s:String x:Key="Str_0113">Set to</s:String>
@@ -413,10 +413,10 @@
     <s:String x:Key="Str_0410">Skilled</s:String>
     <s:String x:Key="Str_0411">Veteran</s:String>
     <s:String x:Key="Str_0412">Old Hand</s:String>
-    <s:String x:Key="Str_0413">Can't flee battles</s:String>
-    <s:String x:Key="Str_0414">Can't shop</s:String>
-    <s:String x:Key="Str_0415">Can't equip armour</s:String>
-    <s:String x:Key="Str_0416">Embarrassing curse</s:String>
+    <s:String x:Key="Str_0413">No Fleeing from Battle</s:String>
+    <s:String x:Key="Str_0414">No Shopping</s:String>
+    <s:String x:Key="Str_0415">No Armour</s:String>
+    <s:String x:Key="Str_0416">Shypox</s:String>
     <s:String x:Key="Str_0417">Hat</s:String>
     <s:String x:Key="Str_0418">Tockle Village</s:String>
     <s:String x:Key="Str_0419">Pastword</s:String>
@@ -510,6 +510,7 @@
     <s:String x:Key="St_Zone">Pep</s:String>
     <s:String x:Key="St_Poison">Poison</s:String>
     <s:String x:Key="St_Curse">Curse</s:String>
+    <s:String x:Key="St_Curse2">Curse (HP)</s:String>
     <s:String x:Key="St_Death">Dead</s:String>
 
     <!-- Character display names -->

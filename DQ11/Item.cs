@@ -56,6 +56,66 @@ namespace DQ11
         }
 
         /// <summary>
+        /// Recharge les noms depuis les .txt de la langue courante en écrasant le
+        /// Name des ItemInfo EXISTANTS (appariés par ID) : aucune référence cassée,
+        /// l'ordre/tri et la recherche binaire restent valides (seul le Name change).
+        /// </summary>
+        public void Reload()
+        {
+            ReloadList("tool.txt", Tools);
+            ReloadList("equipment.txt", Equipments);
+            ReloadList("hat.txt", Hats);
+            ReloadList("title.txt", Titles);
+            ReloadList("zoom.txt", Zooms);
+            ReloadList("important.txt", Importants);
+            ReloadList("recipe.txt", Recipes);
+            ReloadList("quest.txt", Quests);
+            ReloadList("story.txt", Storys);
+            ReloadList("technique.txt", Techniques);
+            ReloadList("monster.txt", Monsters);
+            ReloadList("watchword.txt", WatchWords);
+            None.Name = LocalizationManager.Get("Msg_None");
+        }
+
+        private static void ReloadList(String filename, List<ItemInfo> items)
+        {
+            String path = ResolveDataPath(filename);
+            if (path == null) return;
+
+            // File des ItemInfo par ID : gère les IDs DUPLIQUÉS (même adresse, bits
+            // différents -> ex. watchword/technique/story). On dé-empile dans l'ordre
+            // du fichier pour mettre à jour TOUTES les entrées, pas seulement la 1ʳᵉ.
+            Dictionary<uint, Queue<ItemInfo>> map = new Dictionary<uint, Queue<ItemInfo>>();
+            foreach (ItemInfo info in items)
+            {
+                Queue<ItemInfo> queue;
+                if (!map.TryGetValue(info.ID, out queue))
+                {
+                    queue = new Queue<ItemInfo>();
+                    map[info.ID] = queue;
+                }
+                queue.Enqueue(info);
+            }
+
+            String[] lines = System.IO.File.ReadAllLines(path);
+            foreach (String line in lines)
+            {
+                if (line.Length < 3) continue;
+                if (line[0] == '#') continue;
+                String[] values = line.Split('\t');
+                if (values.Length < 2) continue;
+                if (String.IsNullOrEmpty(values[0])) continue;
+                if (String.IsNullOrEmpty(values[1])) continue;
+                uint id = 0;
+                if (values[0].Length > 1 && values[0][1] == 'x') id = Convert.ToUInt32(values[0], 16);
+                else id = Convert.ToUInt32(values[0]);
+
+                Queue<ItemInfo> queue;
+                if (map.TryGetValue(id, out queue) && queue.Count > 0) queue.Dequeue().Name = values[1];
+            }
+        }
+
+        /// <summary>
         /// Résout le chemin d'un fichier de données selon la langue active.
         ///   1) item\<langue>\<fichier>  (ex. item\fr\tool.txt)
         ///   2) item\<fichier>           (japonais, repli universel)

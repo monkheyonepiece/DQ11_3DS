@@ -18,6 +18,21 @@ namespace DQ11
 			mNumber = number;
 		}
 
+		public override void ReloadNames()
+		{
+			// Rafraîchit uniquement le NOM (pas la quantité, pour ne pas écraser
+			// une saisie non enregistrée lors d'un changement de langue).
+			uint address = mAddress + mPage * 12 * 4 + mNumber;
+			uint id = SaveData.Instance().ReadNumber(address, 2);
+			ItemInfo info = Item.Instance().GetItemInfo(id);
+			if (info == null) return;
+			mItem.Content = info.Name;
+			if (info.Count > 0 && id - info.ID > 0)
+			{
+				mItem.Content += " +" + (id - info.ID).ToString();
+			}
+		}
+
 		public override void Open()
 		{
 			uint address = mAddress + mPage * 12 * 4 + mNumber;

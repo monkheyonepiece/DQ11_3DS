@@ -41,6 +41,12 @@ namespace DQ11
 			}
 		}
 
+		/// <summary>Notifie l'UI que le nom (lu depuis Item) a pu changer de langue.</summary>
+		public void RefreshName()
+		{
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
+		}
+
 		public event PropertyChangedEventHandler PropertyChanged;
 	}
 }

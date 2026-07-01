@@ -249,7 +249,7 @@
                             <ComboBoxItem Content="{DynamicResource Str_0068}"/>
                             <ComboBoxItem Content="{DynamicResource Str_0069}"/>
                         </ComboBox>
-                        <ListBox Grid.Row="16" Grid.Column="1" Grid.RowSpan="2" ItemsSource="{Binding ElementName=ListBoxChar, Path=SelectedItem.Status}">
+                        <ListBox Grid.Row="16" Grid.Column="1" Grid.RowSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding ElementName=ListBoxChar, Path=SelectedItem.Status}">
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <CheckBox Content="{Binding Name}" IsChecked="{Binding Value}"/>

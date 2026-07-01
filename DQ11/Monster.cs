@@ -10,6 +10,7 @@ namespace DQ11
 		private readonly TextBox mValue;
 		private readonly TextBox mSearch;
 		private bool mFilterQueued = false;
+		private Type mType = Type.All;
 
 		private enum Type
 		{
@@ -75,8 +76,27 @@ namespace DQ11
 			}
 		}
 
+		/// <summary>
+		/// Reconstruit la liste avec les noms (data) de la langue courante,
+		/// en conservant le filtre All/None/Have et la recherche en cours.
+		/// À appeler après Item.Reload() lors d'un changement de langue.
+		/// </summary>
+		public override void ReloadNames()
+		{
+			// Re-poke les labels existants (pas de reconstruction des ~948 lignes
+			// -> pas de freeze au changement de langue).
+			foreach (var comp in mPanel.Children)
+			{
+				Grid grid = comp as Grid;
+				if (grid == null) continue;
+				Repoke(grid.Children[0] as ContentControl);
+			}
+			ApplySearchFilter();
+		}
+
 		private void CreateList(Type type)
 		{
+			mType = type;
 			mPanel.Children.Clear();
 
 			SaveData savedata = SaveData.Instance();
@@ -102,7 +122,7 @@ namespace DQ11
 					grid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(45) });
 
 					Label name = new Label();
-					name.Content = info.Name;
+					name.Content = info;   // objet ItemInfo (ToString = Name) -> re-poke possible
 					name.VerticalAlignment = VerticalAlignment.Center;
 					name.Padding = new Thickness(4, 0, 4, 0);   // compact : réduit la hauteur de ligne
 					grid.Children.Add(name);

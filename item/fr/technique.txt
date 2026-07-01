@@ -1,0 +1,5 @@
+#Address 名前 Bit
+0x0613	Chant sacré	0
+0x97D4	Quadrilacère	6
+0x97D4	覇王斬マスター	7
+0x97F0	Bombe atomagique	6

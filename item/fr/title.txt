@@ -1,0 +1,265 @@
+#ID	名前
+0	Coming of Age
+1	A Hero in Chains
+2	A Hero Hounded
+3	The Guidance of Yggdrasil
+4	You Shall Not Escape Me!
+5	Yggdrasil's Chosen
+6	Out-Stand-In
+7	Anchors Aweigh!
+8	Undisputed Champion of Erdrea
+9	Wild Blue Yonder
+10	Dark Art
+11	Mermaid for Each Other
+12	Ice-Breaker
+13	NONE
+14	A Spark Still Shines
+15	Best of the Bastion
+16	A Disciple Worthy of the Name
+17	Soldier of Smile
+18	Bigger Fish to Fry
+19	Knight of the Living Dread
+20	Beating the House
+21	Tatsunaga Terminator
+22	Sibling Revivalry
+23	The Loveliest Catch
+24	Ready As We'll Ever Be
+25	Saviour of All Erdrea
+26	Time Traveller
+27	Here Today, Mordegon Tomorrow
+28	Master of the Skies
+29	Accolades Ahoy!
+30	Accolade Accumulator
+31	Accolade-Laden
+32	Stackolades of Accolades
+33	Made of Accolades
+34	The Ultimate Accolade
+35	Fledgling Fighter
+36	Practised Pummeller
+37	Well-Versed Victor
+38	Virtuoso Vanquisher
+39	Incomparable Conqueror
+40	Critter Hitter
+41	Monster Masher
+42	Beast Blaster
+43	Creature Crusher
+44	Exterminator
+45	Amateur Monsterologist
+46	Minor Monsterologist
+47	Monsterology Major
+48	Master of Monsterology
+49	Monsterologer Royal
+50	 
+51	 
+52	NONE
+53	NONE
+54	NONE
+55	Truly A-Maze-Ing
+56	Scrap Merchant
+57	Prepped to Pep
+58	Peppy-Go-Lucky
+59	Hot Pepper
+60	Pep Star
+61	Pepper Army
+62	Something for a Rainy Day
+63	A Wodge for a Rainy Week
+64	Means for a Rainy Month
+65	Riches for a Rainy Year
+66	Stacks for a Rainy Century
+67	Breadwinner
+68	Moneymaker
+69	Cash Magnet
+70	Big Earner
+71	Gold Miner
+72	Cash Rich
+73	Highly Liquid
+74	Rolling in It
+75	Questward Ho!
+76	Quest to Impress
+77	Simply the Quest
+78	Forging Ahead
+79	Hammer and Tongs
+80	Brilliant Blacksmith
+81	If At First You Don't Succeed
+82	Try, Try Again
+83	Perfectionist
+84	Big Hitter
+85	Superior Swordsmith
+86	Greatsword Grand Master
+87	Master Cutler
+88	Wondrous Wandmaker
+89	High-End Heavy-Wandmaker
+90	Spearcrafting Supremo
+91	Ace Axologist
+92	Crack Clawcraftsperson
+93	Whip-Making Wizard
+94	Big, Bad Boomerang-Builder
+95	Super Sharp Shield-Maker
+96	Grandee of Greatshield-Making
+97	Amazing Armourer
+98	Terrific Tailor
+99	Divine Dressmaker
+100	Hyper Helmetier
+101	Master Milliner
+102	Master Masker
+103	Pendant Pundit
+104	Bracelet Boffin
+105	Glove Guru
+106	Ringmaster
+107	Clever Clogs
+108	Ingenious Accessoriser
+109	Master Craftsperson
+110	Swordsmith of Light
+111	Next-Level Luminary
+112	Master Thief
+113	Flawless Sorceress
+114	Virtuoso Healer
+115	Megastar
+116	Venerable Elder
+117	Undisputed Champion
+118	Knight Exemplar
+119	Happily Married
+120	Mooteorologist
+121	Mount Olympian
+122	At Home on the Range
+123	Outdoorsperson
+124	Deliriously Happy Camper
+125	Guest Who!
+126	Best Guest
+127	Guest Star
+128	クラッシャーボーイ
+129	Obliteratoriser
+130	わんぱく大王
+131	ルーラマスター
+132	Pathfinder General
+133	Puff-Puff Pioneer
+134	Puff-Puff Buff
+135	Amateur Itemologist
+136	Avid Itemologist
+137	Accomplished Itemologist
+138	Expert Itemologist
+139	Ultimate Itemologist
+140	Herbalist
+141	Pharmacist
+142	Apothecary
+143	Phytotherapist
+144	Hall Monitor de Médailles
+145	Prefect de Médailles
+146	Chef de Classe de Médailles
+147	School Captain de Médailles
+148	Bronze Medalist
+149	Silver Medalist
+150	Gold Medalist
+151	Luminary à la Mode
+152	Handsome Rogue
+153	Little Sister Fashionista
+154	The Hippest Harpist
+155	Dressed to Kill
+156	Slinky Minx
+157	Still Got It
+158	Knight-About-Town
+159	Dedicated Follower of Fashion
+160	Preliminary Luminary
+161	Probationary Luminary
+162	Ordinary Luminary
+163	Salutary Luminary
+164	Extraordinary Luminary
+165	Luminary of Legend
+166	Trainee Tearaway
+167	Burgeoning Bandit
+168	Fully Fledged Footpad
+169	Career Criminal
+170	Legendary Larcener
+171	Mage in the Making
+172	Skilled Sorcerer
+173	World-Class Wizard
+174	Superstar Spellcaster
+175	Legendary Legerdemadam
+176	Hopeful Healer
+177	Wheeler Healer
+178	The Heal Deal
+179	High-End Healer
+180	Heally Legendary
+181	Amateur Dramatician
+182	Proficient Performer
+183	Born Board-Treader
+184	Star of the Stage
+185	Living Legend
+186	Old Dog, New Tricks
+187	As Young as You Feel
+188	Full of Beans
+189	Still Going Strong
+190	Alive and Kicking
+191	Rough-and-Tumbler
+192	Prize Fighter
+193	Professional Pummeller
+194	Champ-Trampler
+195	Legend of the Ring
+196	Steadfast Soldier
+197	Noble Knight
+198	Master at Arms
+199	Grand Commander
+200	Chivalric Legend
+201	Beginner's Luck
+202	Lucky Break
+203	Luck of the Devil
+204	Whinny Winny Wonder
+205	Breezy Rider
+206	Tight-Turn Trotter
+207	Jump Jockey
+208	Pillar to Post
+209	Dark Horse
+210	Sir Slotsalot
+211	Slot Hotshot
+212	Slots Maniac
+213	All the Sevens
+214	Jackpot Slotter
+215	Pokesperson
+216	Jiggery-Pokerer
+217	Red-Hot Pokerer
+218	NONE
+219	NONE
+220	Poker Streaker
+221	Fresh Squish Flush!
+222	Wheely Keen
+223	Wheely Getting Into It
+224	Wheely Amazing
+225	The Wheel McCoy
+226	Blessed with the Chest
+227	Casino Connoisseur
+228	Where No Man Has Gone Before
+229	NONE
+230	Heroes' Hero's Hero
+231	NONE
+232	NONE
+233	NONE
+234	NONE
+235	Dragon Slayer
+236	Big Spender
+237	NONE
+238	Ultimate Enlightenment
+239	ヨッチ族の友達
+240	ヨッチ族の相棒
+241	ヨッチ族のアイドル
+242	ヨッチ族のカリスマ
+243	ヨッチ族マスター
+244	おめかしヨッチ族
+245	イケてるヨッチ族
+246	こじゃれたヨッチ族
+247	おしゃれなヨッチ族
+248	時渡りの放浪者
+249	時渡りの旅人
+250	時渡りの勇者
+251	Altar Boy
+252	Altaruist
+253	Altarmate Warrior
+254	End-of-Time-Ender
+255	Bigger Spender
+256	Biggest Spender
+257	称号：258
+258	称号：259
+259	称号：260
+260	称号：261
+261	称号：262
+262	称号：263
+263	称号：264

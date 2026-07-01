@@ -1,0 +1,162 @@
+#ID	名前
+0	Medicinal herb
+1	Strong medicine
+2	Special medicine
+3	Superior medicine
+4	Antidotal herb
+5	Strong antidote
+6	Special antidote
+7	Moonwort bulb
+8	Softwort
+9	Lunaria
+10	Angel bell
+11	Panacea
+12	Perfect panacea
+13	Yggdrasil leaf
+14	Yggdrasil dew
+15	Single phial
+16	Magic water
+17	Sage's elixir
+18	Elfin elixir
+19	Holy water
+20	Chimaera wing
+21	Coagulant
+22	Tangleweb
+23	Sleeping hibiscus
+24	Wakerobin
+25	Mystifying mixture
+26	Rockbomb shard
+27	Sage's stone
+28	Seed of life
+29	Seed of magic
+30	Seed of strength
+31	Seed of deftness
+32	Seed of agility
+33	Seed of defence
+34	Seed of sorcery
+35	Seed of therapeusis
+36	Seed of skill
+37	Pretty betsy
+38	Pep pip
+39	Pep pop
+40	Drasilian shilling
+41	Drasilian guinea
+42	Drasilian sovereign
+45	Love potion
+47	Serpent's soul
+48	War drum
+49	Benevolessence
+50	Copper ore
+51	Iron ore
+52	Silver ore
+53	Gold ore
+54	Platinum ore
+55	Densinium
+56	Gold nuglet
+57	Gold bar
+58	Molten globules
+59	Orichalcum
+60	Dracolyte
+61	Crimsonite
+62	Über agate of evolution
+63	Mythril ore
+64	Pink pine
+65	Fatalistick
+66	Fire wood
+67	Avabranche
+68	Spellbound bough
+69	Wyrmwood
+70	Witherwood
+71	Red wood
+72	Cumulonimbough
+73	Night stick
+74	Flaxen thread
+75	Evencloth
+76	Celestial skein
+77	Faerie fluff
+78	Thinkincense
+79	Cherry blossom petal
+80	Buzzberries
+81	Glimmergrass
+82	Colourful cocoon
+83	Technicolour dreamcloth
+84	Kaleidocloth
+85	Narspicious
+86	Cottontop
+87	Silkblossom
+88	Flurry feather
+89	Butterfly wing
+90	Waveweed
+91	Slipweed
+92	Red eye
+93	Blue eye
+94	Yellow eye
+95	Green eye
+96	Purple eye
+97	Pink pearl
+98	Pale pearl
+99	Pitch pearl
+100	Royal ruby
+101	Savvy sapphire
+102	Sunny citrine
+103	Equable emerald
+104	Artful amethyst
+105	Black Tear
+106	Spectralite
+107	Hardy hide
+108	Fine fur
+109	Magic beast hide
+110	Lambswool
+111	Serpent skin
+112	Dragon hide
+113	Beast bone
+114	Small scale
+115	Tiny tortoise shell
+116	Large scale
+117	Dragon horn
+118	Crimson coral
+119	Maiden's favour
+120	Big bone
+121	Twisted talons
+122	Serpent bone
+123	Magic beast horn
+124	Sun-bleached seashell
+125	Flintstone
+126	Agate of evolution
+127	Warmaline
+128	Lamplight
+129	Enchanted stone
+130	Lava lump
+131	Fire ball
+132	Brighten rock
+133	Glass frit
+134	Lucida shard
+135	Kitty litter
+136	Ice crystal
+137	Mirrorstone
+138	Ethereal stone
+139	Dieamend
+140	Cowpat
+141	Horse manure
+142	Permasnow
+143	Oasis water
+144	Fresh water
+145	Thunderball
+146	Saint's ashes
+147	Belle cap
+148	Sparkly sap
+149	Chronocrystal
+150	Goobricant
+151	Wing of bat
+152	Slimedrop
+153	Sainted soma
+154	Grubby bandage
+155	Toad oil
+156	Snakeskin
+157	Rippledrops
+158	Royal soil
+159	Finessence
+160	Water sedge
+161	Duneberry
+162	Extra mural
+163	Slime crown

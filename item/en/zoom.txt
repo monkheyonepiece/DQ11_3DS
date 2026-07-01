@@ -1,0 +1,26 @@
+#ID	名前
+0	Cobblestone
+1	Heliodor
+2	Heliodor Foothills - Church
+3	Hotto
+4	Gallopolis
+5	Gondolia
+6	The Warrior's Rest Inn
+7	Octagonia
+8	Ruins of Dundrasil
+9	Puerto Valor
+12	The Strand
+13	Lonalulu
+14	Nautica
+11	L'Académie de Notre Maitre des Médailles
+10	Phnom Nonh
+15	Sniflheim
+16	Angri-La
+17	Angri-La - Field of Discipline
+18	Arboria
+19	The First Forest
+20	Havens Above
+21	Trial Isle
+22	Tickington
+23	Tickington
+24	The Last Bastion

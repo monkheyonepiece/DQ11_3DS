@@ -1,0 +1,26 @@
+#ID	名前
+0	Caubaltin
+1	Héliodor
+2	Collines d'Héliodor - Église
+3	Yotto
+4	Gallopolis
+5	Gondolia
+6	Auberge Le Repos du Guerrier
+7	Octagonia
+8	Ruines de Fordrasil
+9	Puerto Valor
+12	L'Estran
+13	Tahitirea
+14	Nauticaa
+11	Académie de Notre-Maître des Médailles
+10	Phnom-Mehn
+15	Sniflheim
+16	Manda Laï
+17	Manda Laï - Enceinte de la Discipline
+18	Arboréa
+19	La Forêt Originelle
+20	Le Refuge céleste
+21	Île des épreuves
+22	Chronopolis
+23	Chronopolis
+24	L'Ultime rempart

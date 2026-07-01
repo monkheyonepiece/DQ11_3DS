@@ -110,7 +110,7 @@
     <s:String x:Key="Str_0107">Équipe</s:String>
     <s:String x:Key="Str_0108">Liste</s:String>
     <s:String x:Key="Str_0109">Cible</s:String>
-    <s:String x:Key="Str_0110">Liste de monstre</s:String>
+    <s:String x:Key="Str_0110">Bestiaire</s:String>
     <s:String x:Key="Str_0111">Vaincu : 0</s:String>
     <s:String x:Key="Str_0112">Vaincu : + de 0</s:String>
     <s:String x:Key="Str_0113">Définir</s:String>
@@ -510,6 +510,7 @@
     <s:String x:Key="St_Zone">Hypertonique</s:String>
     <s:String x:Key="St_Poison">Poison</s:String>
     <s:String x:Key="St_Curse">Malédiction</s:String>
+    <s:String x:Key="St_Curse2">Malédiction PV</s:String>
     <s:String x:Key="St_Death">Mort</s:String>
 
     <!-- Character display names -->

@@ -1,0 +1,948 @@
+0	King Slime
+1	King Cureslime
+2	Metal King Slime
+3	Slime
+4	She-Slime
+5	Metal Slime
+6	Shell Slime
+7	Seaslime
+8	Slimecicle
+9	Slime Knight
+10	Metal Slime Knight
+11	Snooty Slime Knight
+12	Drake Slime
+13	Dragon Slime
+14	Metal Dragon Slime
+15	Bubble Slime
+16	Liquid Metal Slime
+17	Slick Slime
+18	Healslime
+19	Cureslime
+20	Man O' War
+21	Medislime
+22	Fright Bulb
+23	Bite Bulb
+24	Sprite Bulb
+25	Wight Bulb
+26	Eggsoskeleton
+27	Rotten Eggsoskeleton
+28	Runny Eggsoskeleton
+29	Hard-Boiled Eggsoskeleton
+30	Foo Dog
+31	Hot Dog
+32	King Foo Dog
+33	Orc
+34	Orc King
+35	Orc Chieftain
+36	Hammerhood
+37	Brownie
+38	
+39	Jumping Jackal
+40	Jackal Ripper
+41	Tiger Jackal
+42	Dark Sabrecat
+43	Great Sabrecat
+44	Silver Sabrecat
+45	Ursa Minor
+46	Ursa Major
+47	Ursa Panda
+48	Naumannborg
+49	Evil Ganesha
+50	Elephant King
+51	Robber Rabbit
+52	Rottontail
+53	Bad Hare
+54	Sham Hatwitch
+55	Hat Hamwitch
+56	Ham Shamwitch
+57	Great Sabrecub
+58	Dark Sabrecub
+59	Silver Sabrecub
+60	Jowler
+61	Prowler Jowler
+62	Fouler Jowler
+63	Platypunk
+64	Crack-Billed Platypunk
+65	Splatypunk
+66	Infanticore
+67	Franticore
+68	Manticore
+69	Tantamount
+70	Equinox
+71	Godsteed
+72	Weartiger
+73	Otter Shambles
+74	Cheater Cheetah
+75	Bunicorn
+76	Spiked Hare
+77	24-Carrot Bunicorn
+78	Sail Serpent
+79	Diethon
+80	Flython
+81	Liege Lizard
+82	Royal Reptile
+83	Gaia Dragon
+84	Great Dragon
+85	Black Dragon
+86	Noble Dragon
+87	Ethereal Serpent
+88	Boreal Serpent
+89	Infernal Serpent
+90	Green Dragon
+91	Dread Dragon
+92	Blue Dragon
+93	Dragon Rider
+94	Dragooner
+95	Dread Dragooner
+96	Metal Dragon
+97	Mechan-o'-wyrm
+98	Clockwyrm
+99	Cactolotl
+100	Coralotl
+101	Crystalotl
+102	Chihuawyrm
+103	Spitzfire
+104	Labradrake
+105	Professaurus
+106	Kleptoreptile
+107	Evangelizard
+108	Jargon
+109	Dragurn
+110	Bobonga
+111	Wrecktor
+112	Whackolyte
+113	Archbashop
+114	Moosifer
+115	Barbatos
+116	Master Moosifer
+117	Little Devil
+118	Very Devil
+119	Spawny Devil
+120	Prestidigitator
+121	Hocus-poker
+122	Leger-de-Man
+123	Abracadabrer
+124	Hoodlum
+125	Hood
+126	Heavy Hood
+127	Night Clubber
+128	Pruslas
+129	Gigantes
+130	Cyclops
+131	Golden Goliath
+132	Gryphon
+133	War Gryphon
+134	Dark Gryphon
+135	Loss Leader
+136	Master Commander
+137	Red Giant
+138	Grim Keeper
+139	Beleth
+140	Prince of Darkness
+141	Silvapithecus
+142	
+143	batmandrill
+144	Bilhaw
+145	Balhib
+146	Harmachis
+147	Dracky
+148	Drackyma
+149	Drackolyte
+150	Drackmage
+151	Lump Wizard
+152	Lump Mage
+153	Lump Shaman
+154	Troll
+155	Boss Troll
+156	Stout Troll
+157	Dancing Devil
+158	Tap Devil
+159	Caped Caperer
+160	Goobonce
+161	Sootbonce
+162	Snotbonce
+163	Hypothermion
+164	Hyperanemon
+165	Hyperpyrexion
+166	Bodkin Bowyer
+167	Bodkin Fletcher
+168	Bodkin Archer
+169	Bloodbonnet
+170	Smogbonnet
+171	Bilebonnet
+172	Grublin
+173	Gloomy Grublin
+174	Gleeful Grublin
+175	Grumpy Grublin
+176	Succubat
+177	Fruity Succubat
+178	Vampire Succubat
+179	Supreme Succubat
+180	Hooper Trooper
+181	Hooper Duper
+182	Hooperman
+183	Jerkules
+184	Jockilles
+185	Badonis
+186	Brodysseus
+187	Knight Errant
+188	Knight Aberrant
+189	Knight Abhorrent
+190	Shadow
+191	Shade
+192	Silhouette
+193	Living Statue
+194	Stone Guardian
+195	Great Keeper
+196	Overkilling Machine
+197	Überkilling Machine
+198	Crimson Killing Machine
+199	Killing Machine
+200	Hunter Mech
+201	A3G15
+202	Type G0
+203	Golem
+204	Stone Golem
+205	Glacial Golem
+206	Gold Golem
+207	Bambooligan
+208	Bamboozler
+209	Bamboogieman
+210	Rockbomb
+211	Bomboulder
+212	Grinade
+213	Mud Mannequin
+214	Magic Marionette
+215	Gold-plated Puppet
+216	Cannibox
+217	Mimic
+218	Pandora's Box
+219	Masqueraider
+220	Face Invader
+221	Visor Kaiser
+222	Muddy Hand
+223	Bloody Hand
+224	Hardy Hand
+225	Bag o' Laughs
+226	Goodybag
+227	Bag o' Sweets
+228	Brollygagger
+229	Brollyminator
+230	Brollygarch
+231	Brollympian
+232	Penny Pincher
+233	Token Taker
+234	Gold Grabber
+235	Fortune Filcher
+236	Bongo Drongo
+237	Bongo Bango
+238	Bongo Fandango
+239	Bingo Bango Bongo
+240	Needler
+241	Haystack Needler
+242	Electric Needler
+243	Pine Needler
+244	Lampling
+245	Leafy Lampling
+246	Luminous Lampling
+247	Lurid Lampling
+248	Lava Lampling
+249	Deadnaut
+250	Chasmonaut
+251	Calasmonaut
+252	Skeleton Swordsman
+253	One-Man-Army
+254	Armful
+255	Walking Corpse
+256	Ghoul
+257	Corpse Corporal
+258	Toxic Zombie
+259	Restless Armour
+260	Lethal Armour
+261	Infernal Armour
+262	Voodoogooder
+263	Heedoo Voodoo
+264	Troobloovoodoo
+265	Demonrider
+266	Skullrider
+267	Hellrider
+268	Dullahan
+269	Dark Dullahan
+270	Hell's Gatekeeper
+271	Hellbound Horror
+272	Hellbound Hunter
+273	Hellbound Hair-Raiser
+274	Hellbound Heretic
+275	Wight King
+276	Wight Prince
+277	Shadow Minister
+278	Headless Horseman
+279	Headless Hunter
+280	Headless Norseman
+281	Iron Maiden
+282	Steel Siren
+283	Golden Girl
+284	Platinum Poppet
+285	Miasma
+286	Smog
+287	Red Mist
+288	Cyclown
+289	Spinchilla
+290	Whirly Girly
+291	Fromage Fray
+292	Fromage Fey
+293	Fromage Grey
+294	Fromage Flay
+295	Flamethrower
+296	Blizzybody
+297	Shadeshifter
+298	Funghoul
+299	Morphean Mushroom
+300	Mushroom Mage
+301	Stump Chump
+302	Stump Grump
+303	Stump Champ
+304	Cactiball
+305	Fandangow
+306	Golden Globe
+307	Cruelcumber
+308	Zumeanie
+309	Scourgette
+310	Chewlip
+311	Gnashturtium
+312	Gnawchid
+313	Crabid
+314	Handsome Crab
+315	Crabber Dabber Doo
+316	King Crab
+317	King Squid
+318	Squidzilla
+319	Tentacular
+320	Old Man Of The Sea
+321	Wizened Wizard
+322	Grey Gordon
+323	Khalamari Kid
+324	Squid Kid
+325	Octopot
+326	Merman
+327	Mermaniac
+328	Merking
+329	Coralossus
+330	Leviathing
+331	Mosstodon
+332	Snowgre
+333	Kriller Killer
+334	Lobster Mobster
+335	Clangoustine
+336	Crushtacean
+337	Drohl Drone
+338	Drohl Diabolist
+339	Gold Drohl
+340	Toady
+341	Toxic Toad
+342	Overtoad
+343	Mothertoad
+344	Lips
+345	Smacker
+346	Kisser
+347	Horknight
+348	Midnight Horknight
+349	Honeyhead Horknight
+350	Horknight Watchman
+351	Stark Raven
+352	Raven Lunatic
+353	Rantingen Raven
+354	Chimaera
+355	Hocus Chimaera
+356	Cosmic Chimaera
+357	Lunar Chimaera
+358	Firebird
+359	Snowbird
+360	Hybird
+361	Pteranodon
+362	Chillanodon
+363	Terrornodon
+364	Hades Condor
+365	Garuda
+366	Elysium Bird
+367	Phoenix
+368	Mecha-Mynah
+369	Clockwork Cuckoo
+370	Robo-Robin
+371	Jasper
+372	
+373	Dragon Zombie
+374	Skelegon
+375	Abyssal Octopot
+376	
+377	
+378	Tricky Devil
+379	Grim Gryphon
+380	Jarvis
+381	Jarvis's Shadow
+382	Slayer of the Sands
+383	Arachtagon
+384	Dora-in-Grey
+385	Jörmun
+386	Tyriant
+387	Avarith
+388	Alizarin
+389	Gloomnivore
+390	Booga
+391	Tatsunaga
+392	Gyldenaut
+393	Gyldenbritches
+394	Gyldygga
+395	Auroral Serpent
+396	Indignus
+397	Jasper Unbound
+398	Mordegon, Lord of Shadows
+399	Mordegon, Lord of Shadows
+400	Calasmos
+401	Jasper
+402	Underdigger
+403	Abominable Showman
+404	Sinderella
+405	Whambelina
+406	Sterling Sylva
+407	Golden Boy
+408	Jade
+409	Rab
+410	Vince
+411	Krystalinda
+412	
+413	Rab
+414	Restless Knight
+415	Jinxed Jade
+416	Mordegon
+417	Slime
+418	Shadow
+419	
+420	
+421	Mordragon's Tail
+422	Colossal Cannibox
+423	Mega Mimic
+424	Pandora's Big Bad Box
+425	Slime
+426	
+427	
+428	
+429	
+430	
+431	
+432	Mordegon's Staff
+433	Mordegon's Staff
+434	Heliodorian Guard
+435	Heliodorian Soldier
+436	Umbra
+437	Vicious King Slime
+438	Vicious King Cureslime
+439	Vicious Metal King Slime
+440	Vicious Slime
+441	Malicious She-slime
+442	Vicious Metal Slime
+443	Vicious Shell Slime
+444	Malicious Seaslime
+445	Malicious Slimecicle
+446	Malicious Slime Knight
+447	Vicious Metal Slime Knight
+448	Malicious Drake Slime
+449	Vicious Dragon Slime
+450	Vicious Metal Dragon Slime
+451	Vicious Bubble Slime
+452	Vicious Liquid Metal Slime
+453	Malicious Slick Slime
+454	Vicious Cureslime
+455	Vicious Man o'war
+456	Vicious Fright Bulb
+457	Malicious Sprite Bulb
+458	Malicious Eggsoskeleton
+459	Malicious Rotten Eggsoskeleton
+460	Vicious Runny Eggsoskeleton
+461	Vicious Hard-boiled Eggsoskeleton
+462	Vicious Orc
+463	Malicious Orc King
+464	Malicious Hammerhood
+465	Malicious Brownie
+466	Vicious Great Sabrecat
+467	Vicious Silver Sabrecat
+468	Vicious Ursa Minor
+469	Vicious Ursa Major
+470	Colossal Cannibox
+471	Malicious Robber Rabbit
+472	Malicious Rottontail
+473	Vicious Bad Hare
+474	Vicious Sham Hatwitch
+475	Malicious Hat Hamwitch
+476	Vicious Ham Shamwitch
+477	Vicious Great Sabrecub
+478	Vicious Silver Sabrecub
+479	Malicious Jowler
+480	Vicious Prowler Jowler
+481	Malicious Platypunk
+482	Vicious Crack-Billed Platypunk
+483	Malicious Splatypunk
+484	Malicious Infanticore
+485	Vicious Manticore
+486	Malicious Tantamount
+487	Malicious Weartiger
+488	Vicious Otter Shambles
+489	Vicious Cheater Cheetah
+490	Vicious Bunicorn
+491	Malicious Spiked Hare
+492	Vicious Sail Serpent
+493	Malicious Diethon
+494	Malicious Flython
+495	Vicious Liege Lizard
+496	Vicious Great Dragon
+497	Malicious Black Dragon
+498	Vicious Ethereal Serpent
+499	Malicious Boreal Serpent
+500	Vicious Green Dragon
+501	Malicious Blue Dragon
+502	Malicious Dragon Rider
+503	Malicious Dragooner
+504	Vicious Dread Dragooner
+505	Vicious Metal Dragon
+506	Malicious Cactolotl
+507	Vicious Chihuawyrm
+508	Malicious Spitzfire
+509	Malicious Evangelizard
+510	Malicious Jargon
+511	Vicious Bobonga
+512	Malicious Wrecktor
+513	Vicious Whackolyte
+514	Malicious Moosifer
+515	Malicious Little Devil
+516	Vicious Very Devil
+517	Malicious Prestidigitator
+518	Malicious Hocus-poker
+519	Vicious Leger-de-man
+520	Vicious Hoodlum
+521	Malicious Hood
+522	Vicious Heavy Hood
+523	Malicious Night Clubber
+524	Vicious Gigantes
+525	Malicious Cyclops
+526	Vicious Gryphon
+527	Vicious War Gryphon
+528	Malicious Loss Leader
+529	Bathysfear
+530	Mega Mimic
+531	Malicious Balhib
+532	Vicious Dracky
+533	Malicious Drackyma
+534	Malicious Drackolyte
+535	Vicious Drackmage
+536	Vicious Lump Wizard
+537	Vicious Lump Mage
+538	Vicious Lump Shaman
+539	Vicious Troll
+540	Vicious Boss Troll
+541	Malicious Dancing Devil
+542	Vicious Tap Devil
+543	Malicious Caped Caperer
+544	Vicious Goobonce
+545	Malicious Sootbonce
+546	Vicious Hyperthermion
+547	Pandora's Big Bad Box
+548	Vicious Hyperpyrexion
+549	Malicious Bodkin Bowyer
+550	Vicious Bodkin Fletcher
+551	Malicious Bodkin Archer
+552	Vicious Bloodbonnet
+553	Malicious Smogbonnet
+554	Vicious Grublin
+555	Vicious Gloomy Grublin
+556	Malicious Gleeful Grublin
+557	Vicious Succubat
+558	Malicious Fruity Succubat
+559	Vicious Vampire Succubat
+560	Vicious Hooper Trooper
+561	Vicious Jerkules
+562	Vicious Jockilles
+563	Malicious Knight Errant
+564	Malicious Knight Aberrant
+565	Malicious Shadow
+566	Vicious Shade
+567	Vicious Silhouette
+568	Malicious Living Statue
+569	Malicious Stone Guardian
+570	Malicious Great Keeper
+571	Vicious Overkilling Machine
+572	Malicious Killing Machine
+573	Malicious Hunter Mech
+574	Malicious Stone Golem
+575	Vicious Gold Golem
+576	Malicious Rockbomb
+577	Vicious Bomboulder
+578	Malicious Grinade
+579	Malicious Mud Mannequin
+580	Malicious Marionette
+581	Vicious Gold-plated Puppet
+582	Vicious Mimic
+583	Malicious Pandora's Box
+584	Malicious Masqueraider
+585	Vicious Face Invader
+586	Malicious Visor Kaiser
+587	Malicious Muddy Hand
+588	Vicious Bloody Hand
+589	Vicious Hardy Hand
+590	Malicious Brollygagger
+591	Malicious Brollyminator
+592	Vicious Brollygarch
+593	Vicious Penny Pincher
+594	Vicious Token Taker
+595	Vicious Bongo Drongo
+596	Malicious Bongo Bango
+597	Vicious Bongo Fandongo
+598	Malicious Needler
+599	Malicious Haystack Needler
+600	Malicious Pine Needler
+601	Malicious Lampling
+602	Vicious Leafy Lampling
+603	Malicious Luminous Lampling
+604	Vicious Lurid Lampling
+605	Malicious Lava Lampling
+606	Malicious Deadnaut
+607	Vicious Chasmonaut
+608	Vicious Skeleton Swordsman
+609	Malicious Armful
+610	Vicious Walking Corpse
+611	Vicious Ghoul
+612	Vicious Corpse Corporal
+613	Vicious Toxic Zombie
+614	Vicious Restless Armour
+615	Malicious Lethal Armour
+616	Vicious Infernal Armor
+617	Vicious Demonrider
+618	Malicious Skullrider
+619	Vicious Hellrider
+620	Vicious Dullahan
+621	Vicious Dark Dullahan
+622	Malicious Wight Prince
+623	Vicious Shadow Minister
+624	Vicious Headless Horseman
+625	Vicious Headless Hunter
+626	Vicious Iron Maiden
+627	Vicious Steel Siren
+628	Vicious Golden Girl
+629	Malicious Cyclown
+630	Vicious Spinchilla
+631	Malicious Whirly Girly
+632	Vicious Flamethrower
+633	Vicious Blizzybody
+634	Malicious Shadeshifter
+635	Vicious Funghoul
+636	Vicious Morphean Mushroom
+637	Malicious Mushroom Mage
+638	Vicious Stump Chump
+639	Vicious Stump Grump
+640	Malicious Stump Champ
+641	Malicious Cactiball
+642	Vicious Fandangow
+643	Vicious Scourgette
+644	Malicious Chewlip
+645	Vicious Gnawchid
+646	Malicious Handsome Crab
+647	Vicious Crabber Dabber Doo
+648	Vicious King Crab
+649	Malicious King Squid
+650	Malicious Tentacular
+651	Vicious Old Man Of The Sea
+652	Malicious Wizened Wizard
+653	Malicious Grey Gordon
+654	Vicious Khalamari Kid
+655	Malicious Squid Kid
+656	Vicious Octopot
+657	Malicious Merman
+658	Malicious Mermaniac
+659	Malicious Merking
+660	Malicious Coralossus
+661	Malicious Mosstodon
+662	Vicious Snowgre
+663	Vicious Kriller Killer
+664	Vicious Lobster Mobster
+665	Malicious Clangoustine
+666	Malicious Drohl Drone
+667	Vicious Golden Drohl
+668	Vicious Toxic Toad
+669	Malicious Smacker
+670	Vicious Kisser
+671	Vicious Horknight
+672	Vicious Midnight Horknight
+673	Malicious Honeyhead Horknight
+674	Malicious Stark Raven
+675	Vicious Raven Lunatic
+676	Vicious Rantingen Raven
+677	Vicious Chimaera
+678	
+679	Vicious Cosmic Chimaera
+680	Malicious Pteranodon
+681	Malicious Chillanodon
+682	Vicious Terrornodon
+683	Malicious Hades Condor
+684	Vicious Garuda
+685	Malicious Elysium Bird
+686	Malicious Mecha-mynah
+687	Malicious Clockwork Cuckoo
+688	Malicious Robo-robin
+689	Malicious Dragon Zombie
+690	Vicious Skelegon
+691	
+692	
+693	Vicious Grim Gryphon
+694	Malicious Arachtagon
+695	Malicious Jörmun
+696	
+697	Malicious Gloomnivore
+698	Vicious Gyldenaut
+699	Vicious Gyldenbritches
+700	Malicious Auroral Serpent
+701	Malicious Underdigger
+702	Malicious Abominable Showman
+703	Malicious Sinderella
+704	Malicious Whambelina
+705	Malicious Golden Boy
+706	Jasper
+707	
+708	
+709	Vicious Slime
+710	
+711	
+712	
+713	Vicious Slime
+714	Vicious Metal Slime
+715	Vicious King Slime
+716	Vicious Liquid Metal Slime
+717	Vicious Bubble Slime
+718	Vicious Dracky
+719	Vicious Drackmage
+720	Vicious Chimaera
+721	Vicious Bunicorn
+722	Vicious Shell Slime
+723	Vicious Man o'war
+724	Vicious Crabber Dabber Doo
+725	Vicious Walking Corpse
+726	Vicious Toxic Zombie
+727	Vicious Corpse Corporal
+728	Vicious War Gryphon
+729	Vicious Grim Gryphon
+730	Vicious Sham Hatwitch
+731	Vicious Metal Slime Knight
+732	Vicious Troll
+733	Vicious Orc
+734	Vicious Goobonce
+735	Vicious Bloodbonnet
+736	Vicious Face Invader
+737	Vicious Bodkin Fletcher
+738	Vicious Khalamari Kid
+739	Vicious Tap Devil
+740	Vicious Shade
+741	Vicious Great Sabrecat
+742	Vicious Restless Armour
+743	Vicious Lump Wizard
+744	Vicious Lump Mage
+745	Vicious Dragon Slime
+746	Vicious Toxic Toad
+747	Vicious Raven Lunatic
+748	Vicious Green Dragon
+749	Vicious Crack-Billed Platypunk
+750	Vicious Very Devil
+751	Vicious Grublin
+752	Vicious Gloomy Grublin
+753	Vicious Funghoul
+754	Vicious Morphean Mushroom
+755	Vicious Spinchilla
+756	Vicious Runny Eggsoskeleton
+757	Vicious Stump Chump
+758	Vicious Stump Grump
+759	Vicious Succubat
+760	Vicious Ursa Minor
+761	Vicious Fandangow
+762	Vicious Ethereal Serpent
+763	Vicious Demonrider
+764	Vicious Otter Shambles
+765	Vicious Chihuawyrm
+766	Vicious Bongo Drongo
+767	Vicious Bongo Fandongo
+768	Vicious Horknight
+769	Vicious Midnight Horknight
+770	Vicious Great Sabrecub
+771	Vicious Silver Sabrecub
+772	Vicious Garuda
+773	Vicious Gnawchid
+774	Vicious Fright Bulb
+775	Vicious Kriller Killer
+776	Vicious Jockilles
+777	Vicious Leafy Lampling
+778	Vicious Shadow Minister
+779	Vicious Hyperthermion
+780	Blind Hatred
+781	
+782	Unfathomable Anger
+783	Sheer Decadence
+784	All-Consuming Greed
+785	Abject Terror
+786	Darkest Despair
+787	Overweening Pride
+788	
+789	
+790	Lord Dragon
+791	Wyrmalroth
+792	Zomaiden
+793	Psaroid
+794	Nimclops
+795	Mortamammoth
+796	Orgodelotl
+797	Hoopthorne
+798	Hunkorvus
+799	Nelgelas
+800	End of Time
+801	Knight Aberrant
+802	Drohl Drone
+803	Erdrick's Restless Armour
+804	Baramos
+805	Flamethrower
+806	Silvapithecus
+807	Dazey
+808	Grampogriff
+809	Nagasus
+810	
+811	
+812	Maeve
+813	Obstructicus
+814	Necrogondolier
+815	King of Metal King Slimes
+816	Dud Dude
+817	Side Winder
+818	Pilferpithecus
+819	
+820	
+821	Revivalist
+822	
+823	Archfiend's Acolyte
+824	
+825	
+826	
+827	Sir Roseguardin
+828	Dayle
+829	
+830	Doomsday Dragon
+831	
+832	
+833	
+834	
+835	
+836	
+837	
+838	
+839	
+840	
+841	
+842	
+843	
+844	
+845	
+846	
+847	
+848	
+849	
+850	
+851	
+852	
+853	
+854	
+855	
+856	
+857	
+858	
+859	
+860	
+861	
+862	
+863	
+864	
+865	
+866	
+867	
+868	
+869	
+870	
+871	
+872	
+873	
+874	
+875	
+876	
+877	
+878	
+879	Tweedledoom
+880	Tweedledeath
+881	
+882	
+883	
+884	
+885	
+886	
+887	
+888	
+889	
+890	
+891	
+892	
+893	
+894	
+895	
+896	
+897	
+898	
+899	
+900	
+901	
+902	
+903	
+904	
+905	
+906	
+907	
+908	
+909	
+910	
+911	
+912	
+913	
+914	
+915	
+916	
+917	
+918	
+919	
+920	
+921	
+922	
+923	
+924	
+925	
+926	
+927	
+928	
+929	
+930	
+931	
+932	
+933	
+934	
+935	
+936	
+937	
+938	
+939	
+940	
+941	
+942	
+943	
+944	Robbin' 'ood
+945	
+946	
+947	Robbin' Huddle

@@ -15,6 +15,7 @@ namespace DQ11
 
 		Bag mBagTool;
 		Bag mBagEquipment;
+		Monster mMonster;
 
 		ButtonCheckObserver mHatButtonCheck;
 		ButtonCheckObserver mTitleButtonCheck;
@@ -37,12 +38,22 @@ namespace DQ11
 			// Re-localise le libellé "aucun fichier" même si aucune save n'est chargée.
 			UpdateFilePathDisplay();
 
+			// Recharge les noms de données (.txt) pour la nouvelle langue, puis
+			// rafraîchit tous les écrans qui affichent ces noms.
+			Item.Instance().Reload();
+			mAllStatusList?.ForEach(x => x.ReloadNames());
+			// Listes construites hors AllStatus (libellés = objets ItemInfo).
+			AllStatus.RepokeItems(ListBoxSmith);
+			AllStatus.RepokeItems(ListBoxCollection);
+
 			DataContext context = DataContext as DataContext;
 			if (context == null) return;
 
 			foreach (Character ch in context.Char)
 			{
 				ch.RefreshDisplayName();
+				foreach (CharStatus st in ch.Status) st.RefreshName();
+				foreach (CharItem it in ch.Item) it.RefreshName();   // équipements/inventaire (combos R Hand, Body…)
 			}
 			foreach (IListItem item in context.Party.List)
 			{
@@ -62,7 +73,8 @@ namespace DQ11
 			mAllStatusList.Add(new Technique(ListBoxTechnique, ButtonTechniqueCheck, ButtonTechniqueUnCheck));
 
 			// モンスター図鑑.
-			mAllStatusList.Add(new Monster(StackPanelMonster, RadioButtonAll, RadioButtonNone, RadioButtonHave, TextBoxMonsterCount, ButtonMonsterDecision, TextBoxMonsterSearch));
+			mMonster = new Monster(StackPanelMonster, RadioButtonAll, RadioButtonNone, RadioButtonHave, TextBoxMonsterCount, ButtonMonsterDecision, TextBoxMonsterSearch);
+			mAllStatusList.Add(mMonster);
 
 			// ふくろ.
 			mBagTool = new Bag(mAllStatusList, StackPanelBagTool, ItemSelectWindow.eType.Tool, ComboBoxBagToolPage, Util.BagToolStartAddress, Util.BagToolCount);
@@ -540,7 +552,7 @@ namespace DQ11
 				CheckBox obtain = new CheckBox();
 				status.Add(new HatObtain(obtain, info.ID));
 				mHatButtonCheck.Append(obtain);
-				obtain.Content = info.Name;
+				obtain.Content = info;   // objet ItemInfo (ToString = Name) -> rafraîchissable
 				obtain.VerticalAlignment = VerticalAlignment.Center;
 				grid.Children.Add(obtain);
 
@@ -561,7 +573,7 @@ namespace DQ11
 				CheckBox obtain = new CheckBox();
 				status.Add(new TitleObtain(obtain, info.ID));
 				mTitleButtonCheck.Append(obtain);
-				obtain.Content = info.Name;
+				obtain.Content = info;   // objet ItemInfo (ToString = Name) -> rafraîchissable
 				list.Items.Add(obtain);
 			}
 		}
@@ -605,7 +617,7 @@ namespace DQ11
 
 					Label label = new Label();
 					label.Content = info;
-					label.Width = 150;
+					label.Width = 270;
 					panel.Children.Add(label);
 
 					for (uint j = 0; j < info.Count; j++)

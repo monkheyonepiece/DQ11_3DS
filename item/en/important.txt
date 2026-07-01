@@ -1,0 +1,91 @@
+#ID	名前
+2495	Red Orb
+2496	Yellow Orb
+2497	Silver Orb
+2498	Green Orb
+2499	Purple Orb
+2500	Blue Orb
+2501	Rainbough
+2502	Magic key
+2503	Ultimate key
+2504	Sewer key
+2505	Mountain gate key
+2506	Golden globule
+2507	Proper pepper
+2508	The Fun-Size Forge
+2509	MMA draw number
+2510	Martial arts mask
+2511	Precious pendant
+2512	Forged love letter
+2513	Queen's final letter
+2514	Chalky's letter
+2515	Keystone
+2516	Gallopolis pass
+2517	Sultan's letter
+2518	Monster-Calling Bell
+2519	Birdsong nectar
+2520	Memory box
+2521	Album de médailles
+2522	Carved figure
+2523	Lorelei's harp
+2524	Lovers' veil
+2525	Witch's grimoire
+2526	Snærose
+2527	Crucible key
+2528	Calamus Flute
+2529	Forging Hammer
+2530	Guiding Light
+2531	Wheel of Time
+2532	Scruffy urchin
+2533	Red kale
+2534	Diplôme de l'Académie
+2535	Dulcet dulse
+2536	Kanaloamari
+2537	Lantern shard
+2538	Map of Erdrea
+2539	Lumen essence
+2540	Noah's archive
+2541	Sea Queen's Conch
+2542	Hakim's letter
+2543	Akia's letter
+2544	Important letter
+2545	Kanono cannon
+2546	Sealicitor's statutes
+2547	Type G0 sprocket
+2548	Divine dew
+2549	Hotto stuff
+2550	Pepper Tree branch
+2551	Crystal lily
+2552	Erdwin's bracelet
+2553	Rainbow rock salt
+2554	Luter's opus
+2555	Akia's letter
+2556	Harmonicrystal
+2557	Floral coral
+2558	Rainproof rayon
+2559	Fiery brimstone
+2560	Desert rose
+2561	Mellow vera
+2562	Wishteria seeds
+2563	Pungent perfume
+2564	Mark of Xero
+2565	Princess's pledge
+2566	Choker
+2567	Tombola ticket
+2568	Spectrum nectar
+2569	Defuddle drops
+2570	Revelatree branch
+2571	Stone-Cold Cold Killer
+2572	Bodura grass
+2573	The Bunny Girl's Bible
+2574	Golden mane
+2575	Bianca's ribbon
+2576	The Girl's Own Annual
+2577	The Champion's Code
+2578	Look, No Pants
+2579	Guns 'n' Buns
+2580	To Be a King
+2581	Lyre of Ire
+2582	Zoomstone
+2583	Fygg
+2584	Golden pickaxe

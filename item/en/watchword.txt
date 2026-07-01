@@ -1,0 +1,34 @@
+#Address	名前	Bit
+0x674C	Altar of Origins - Damdara	0
+0x674C	Altar of Origins - Tantegel	1
+0x674C	Altar of Origins - Galenholm	2
+0x674C	Altar of the Legendary Line - Cave to Rendarak	3
+0x674C	Altar of the Legendary Line - Moonahan	4
+0x674C	Altar of the Legendary Line - Cannock	5
+0x674C	Altar of Salvation - Baramos's Castle	6
+0x674C	Altar of Salvation - Aliahan	7
+0x674D	Altar of Salvation - Baramos's Castle (Later on)	0
+0x674D	Altar of the Chosen - Imperial Pantry of Parthenia	1
+0x674D	Altar of the Chosen - Hidden Valley	2
+0x674D	Altar of the Chosen - Rosehill	3
+0x674D	Altar of the Heavenly Bride - The Neverglade	4
+0x674D	Altar of the Heavenly Bride - The Briscoletti Mansion	5
+0x674D	Altar of the Heavenly Bride - Whealbrook	6
+0x674D	Altar of Reverie - The Pillar of Pegasus	7
+0x674E	Altar of Reverie - Weaver's Peak	0
+0x674E	Altar of Reverie - Alltrades Abbey 1
+0x674E	Altar of the Forgotten Past - Rainbow Mines	2
+0x674E	Altar of the Forgotten Past - Roamer Encampment (Night)	3
+0x674E	Altar of the Forgotten Past - Roamer Encampment 	4
+0x674E	Altar of the Cursed King - Castle Trodain	5
+0x674E	Altar of the Cursed King - Château Felix (Dusk)	6
+0x674E	Altar of the Cursed King - Chateau Felix	7
+0x674F	Altar of the Starry Skies - Ruby Path of Doom	0
+0x674F	Altar of the Starry Skies - The Observatory	1
+0x674F	Altar of the Starry Skies - Quester's Rest	2
+0x674F	Altar of the Undeciphered - Tenton	3
+0x674F	Altar of the Undeciphered - Room of Revival	4
+0x674F	Altar of an Elusive Age - Deepest Recesses of the Past	5
+0x674F	Altar of an Elusive Age - Hall of Remembrance	6
+0x674F	Altar of an Elusive Age - Hall of Remembrance (Level 2)	7
+0x6750	Altar of an Elusive Age - Hall of Remembrance (Level 3)	0

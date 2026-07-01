@@ -13,6 +13,11 @@ namespace DQ11
 			mID = id;
 		}
 
+		public override void ReloadNames()
+		{
+			Repoke(mObtain);
+		}
+
 		public override void Open()
 		{
 			SaveData saveData = SaveData.Instance();

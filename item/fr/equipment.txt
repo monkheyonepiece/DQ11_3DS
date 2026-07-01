@@ -1,0 +1,607 @@
+#ID	名前	個数
+164	Cobblestone sword	4
+168	Copper sword	4
+172	Soldier's sword	4
+176	Bronze sword	4
+180	Rapier	4
+184	Iron broadsword	4
+188	Sylvando's sword	4
+192	Cautery sword	4
+196	Silver rapier	4
+200	Steel broadsword	4
+204	Bastard sword	4
+208	Bandit blade	4
+212	Falcon blade	4
+216	Zombiesbane	4
+220	Platinum sword	4
+224	Zombie slayer	4
+228	Aurora blade	4
+232	Fizzle foil	4
+236	Dragonsbane	4
+240	Miracle sword	4
+244	Fire blade	4
+248	Sword of Light	1
+249	Metal slime sword	4
+253	Stardust sword	1
+254	Über miracle sword	4
+258	Über falcon blade	4
+262	Inferno blade	4
+266	Nebula sword	1
+267	Dragon slayer	4
+271	Liquid metal sword	4
+275	Supernova sword	1
+276	Thunderstorm sword	4
+280	Thousand-fold katana	4
+284	Sword of judgment	4
+288	Super Sword of Light	1
+289	Drustan's sword	4
+293	Shamshir of light	4
+297	Hell sabre	4
+301	Metal king sword	4
+305	Hypernova sword	4
+309	Heliodorian sword	4
+313	Sword of Kings	1
+314	Supreme Sword of Light	4
+318	Cypress stick	4
+322	Erik's dagger	4
+326	Bronze knife	4
+330	Poison needle	4
+334	Divine dagger	4
+338	Poison moth knife	4
+342	Batterfly knife	4
+346	Assassin's dagger	4
+350	Dread dagger	4
+354	Eagle dagger	4
+358	Nobleman's knife	4
+362	Bloodletter	4
+366	Sword breaker	4
+370	Fenrir fang	4
+374	Soul breaker	4
+378	Icicle dirk	4
+382	Serpentscale skean	4
+386	Imp knife	4
+390	Gladius	4
+394	Falcon knife earring	4
+398	Flame tang	4
+402	Deft dagger	1
+403	High-born blade	4
+407	Knife of strife	4
+411	Darting dagger	1
+412	Gryphon's wing	4
+416	Dashing dagger	1
+417	Thunderstorm skean	4
+421	El Stupendo	4
+425	Timeshear	4
+429	Dynamo dagger	4
+433	Cavalier cleaver	4
+437	King axe	4
+441	Ice axe	4
+445	Kaiser axe	4
+449	Obliteratoriser	4
+453	Overlord's axe	4
+457	Bad axe	1
+458	Conqueror's axe	4
+462	Avalanche axe	4
+466	Maxi axe	1
+467	Apollo's axe	4
+471	Climaxe	1
+472	Aristocrat's axe	4
+476	Kairos cleaver	4
+480	Galaxy axe	4
+484	Serena's wand	4
+488	Lamp post	4
+492	Posey pole	4
+496	Lolly stick	4
+500	Jolly brolly	4
+504	Wyvern wand	4
+508	Seraphic sceptre	4
+512	Spryggdrasil	4
+516	Glumbrella	4
+520	Bonbon baton	4
+524	Red dragon rod	4
+528	Seraph's stick	4
+532	Butterfly baton	4
+536	Glow stick	4
+540	Get-up-and-glow stick	4
+544	Pixie pole	4
+548	Fantastick	4
+552	Cane of compassion	4
+556	Sceptre of Time	4
+560	Faerie king's cane	4
+564	Rusty sceptre	1
+565	Naughty Stick	4
+569	Edged boomerang	4
+573	Crucerang	4
+577	Soarin' steel	4
+581	Flametang boomerang	4
+585	Winter's wing	4
+589	Magic circle	4
+593	Banefire boomerang	4
+597	Star cross	4
+601	Pentarang	4
+605	Metal goomerang	4
+609	Meteorang	1
+610	Asterang	1
+611	Stellarang	1
+612	Liquid metal goomerang	4
+616	Dark star	4
+620	Hunter's moon	4
+624	Galaxarang	4
+628	Metal king goomerang	4
+632	Birchwood boomerang	4
+636	Boomerangs	4
+640	Copper chopper	4
+644	Broad sword	4
+648	Cast-iron claymore	4
+652	Broader sword	4
+656	Black blade	4
+660	Carbon steel claymore	4
+664	Banishing blade	4
+668	Razer-wing	4
+672	Nightcleaver	4
+676	Platinum powersword	4
+680	Hendrik's greatsword	4
+684	Demonsbane	4
+688	Brimstone blade	4
+692	Wyrmfang	4
+696	Metal gooreatsword	4
+700	Lord's sword	4
+704	Skysteed sword	4
+708	Liquid metal gooreatsword	4
+712	Legate's blade	4
+716	Berserker's blade	4
+720	Brilliant blade	4
+724	Metal king gooreatsword	4
+728	Cobblestone greatsword	4
+732	Sword of Shadows	1
+733	Bronze lance	4
+737	Iron lance	4
+741	Battle fork	4
+745	Steel lance	4
+749	Jade's glaive	4
+753	Trident	4
+757	Lightning lance	4
+761	Platinum lance	4
+765	Gracos's trident	4
+769	Demon spear	4
+773	Storm spear	4
+777	Full fathom fork	4
+781	Paladin's lance	4
+785	Metal slime spear	4
+789	Poker	1
+790	Seraph's spear	4
+794	Straight poker	1
+795	Liquid metal spear	4
+799	Stud poker	1
+800	Barbarous pole	4
+804	Sacred spear	4
+808	Heaven's talon	4
+812	Metal king spear	4
+816	Split-pot poker	4
+820	Faerie staff	4
+824	Veronica's staff	4
+828	Wizard's staff	4
+832	Staff of sentencing	4
+836	Shiverstick	4
+840	Staff of divine wrath	4
+844	Rab's cane	4
+848	Watermaul wand	4
+852	Lightning staff	4
+856	Rod of rapidity	4
+860	Tsunami staff	4
+864	Magma staff	4
+868	Staff of antimagic	4
+872	Lightning conductor	4
+876	Rune staff	4
+880	Hieroglyph staff	4
+884	Hocus locus	4
+888	Staff of resurrection	4
+892	Celestial sceptre	4
+896	Spirit staff	4
+900	Sage's staff	4
+904	Siren's staff	4
+908	Bright staff	1
+909	Sacrosanct staff	4
+913	Wyrmwand	4
+917	Supreme sage's staff	4
+921	Shining staff	1
+922	Brilliant staff	1
+923	Rod of paradise	4
+927	Staff of eternity	4
+931	Aurora staff	4
+935	Godbird sceptre	4
+939	Iron claws	4
+943	Silver claws	4
+947	Infernails	4
+951	Steel claws	4
+955	Crow's claws	4
+959	Platinum claws	4
+963	Kestrel claws	4
+967	Fire claws	4
+971	Ice claws	4
+975	Kite claws	4
+979	Cobra claws	4
+983	Dragon claws	4
+987	Crimson claws	4
+991	Beast claws	4
+995	Dragonlord claws	1
+996	Combusticlaws	4
+1000	King cobra claws	4
+1004	Monster slashers	4
+1008	Beastmaster claws	1
+1009	Crystal claws	4
+1013	Dragovian lord claws	1
+1014	Orichalcum claws	4
+1018	Deicimators	4
+1022	Xenlon claws	4
+1026	Frostfire fingers	4
+1030	Golden claws	4
+1034	Thorn whip	4
+1038	Battle whip	4
+1042	Hypnowhip	4
+1046	Rosewhip	4
+1050	Beastly bullwhip	4
+1054	Scorpion tail	4
+1058	Dragontail whip	4
+1062	Demon whip	4
+1066	Queen's whip	4
+1070	Archdemon whip	4
+1074	Empress's whip	4
+1078	Beelzebarb	4
+1082	Gringham whip	1
+1083	Goddess whip	4
+1087	Mega Gringham whip	1
+1088	Triple-tine whip	4
+1092	Giga Gringham whip	1
+1093	Malevolash	4
+1097	Anchor of rancour	4
+1101	Hellbeast's leash	4
+1105	Über Gringham whip	4
+1109	Pot lid	4
+1113	Leather shield	4
+1117	Scale shield	4
+1121	Silver platter	4
+1125	Gold platter	4
+1129	Light shield	4
+1133	Platinum platter	4
+1137	Magic shield	4
+1141	Flame shield	4
+1145	Ice shield	4
+1149	White shield	4
+1153	Enchanted shield	4
+1157	Metal slime shield	4
+1161	Brain drainer	4
+1165	Ethereal shield	4
+1169	Silver shield	4
+1173	Liquid metal shield	4
+1177	Psyche swiper	4
+1181	Devilry drinker	4
+1185	Erdwin's shield	4
+1189	Metal king shield	4
+1193	Soul sucker	4
+1197	Tempest shield	4
+1201	Bronze shield	4
+1205	Iron shield	4
+1209	Steel shield	4
+1213	Shield of Heliodor	4
+1217	Platinum shield	4
+1221	Warrior's shield	4
+1225	Dragon shield	4
+1229	Dark shield	4
+1233	Saintess shield	4
+1237	Ogre shield	4
+1241	Ruinous shield	4
+1245	Goddess shield	4
+1249	Drustan's shield	4
+1253	Mardi garb	4
+1257	Plain clothes	4
+1261	Wayfarer's clothes	4
+1265	Boxer shorts	4
+1269	Templar's uniform	4
+1273	Leather dress	4
+1277	Leather cape	4
+1281	Fur poncho	4
+1285	Cloak of evasion	4
+1289	Posh waistcoat	4
+1293	Pretty pinny	4
+1297	Dainty dress	4
+1301	Smart suit	4
+1305	Silk bustier	4
+1309	Spangled dress	4
+1313	Magical skirt	4
+1317	Velvet cape	4
+1321	Dragon dojo duds	4
+1325	Uniforme de l'Académie	4
+1329	Hairy vest	4
+1333	Strongsam	4
+1337	Shimmering dress	4
+1341	Twinkling tuxedo	4
+1345	Rogue's robes	4
+1349	Macabre mantle	4
+1353	Saintess dress	4
+1357	Dancer's costume	4
+1361	Divine bustier	4
+1365	Chemise de danseuse	4
+1369	Scandalous swimsuit	4
+1373	Agility gilet	4
+1377	Swindler's stole	4
+1381	Cat suit	4
+1385	Dapper doublet	4
+1389	Drasilian dress coat	4
+1393	General's jacket	4
+1397	Star's suit	4
+1401	Combat costume	4
+1405	Brigandine	4
+1409	Liquid metal jacket	4
+1413	Superstar's suit	4
+1417	Freebooter's bolero	4
+1421	Dragonskin jacket	4
+1425	Stellar suit	4
+1429	Metal king jacket	4
+1433	Exotoga	4
+1437	Erdwin's tunic	4
+1441	Pirate king's coat	4
+1445	Swindler king's stole	4
+1449	Sage's robe	4
+1453	Sacred raiment	4
+1457	Glad rags	4
+1461	Dashing doublet	4
+1465	Xenlon gown	4
+1469	Pallium Regale	4
+1473	Yggdrasil dress coat	4
+1477	Field marshal's finery	4
+1481	Cobblestone clobber	4
+1485	Bunny suit	4
+1489	Corsair's coat	4
+1493	Potentate's pallium	4
+1497	Gladder rags	4
+1501	Hot bikini	4
+1505	Arriviste's vest	4
+1509	Elevating vest	4
+1513	Vest for success	4
+1517	Crimson catsuit	4
+1521	Black cat costume	4
+1525	Divine dancer's costume	4
+1529	Uniforme chic de l'Académie	4
+1533	Leather armour	4
+1537	Scale armour	4
+1541	Chain mail	4
+1545	Bronze armour	4
+1549	Iron cuirass	4
+1553	Iron armour	4
+1557	Tortoise shell	4
+1561	Full plate armour	4
+1565	Zombie mail	4
+1569	Silver cuirass	4
+1573	Silver mail	4
+1577	Heavy armour	4
+1581	Magic armour	4
+1585	Dancer's mail	4
+1589	Dragon mail	4
+1593	Spiked armour	4
+1597	Platinum mail	4
+1601	Bandit mail	4
+1605	Mirror armour	4
+1609	Metal slime armour	4
+1613	Drasilian armour	4
+1617	Hendrik's armour	4
+1621	Gigant armour	4
+1625	Liquid metal armour	4
+1629	Sacred armour	4
+1633	Metal king armour	4
+1637	Legendary armour	4
+1641	Irwin's armour	4
+1645	Drustan's armour	4
+1649	Gallopolitan garb	4
+1653	Tectonic plate	4
+1657	Silk robe	4
+1661	Fizzle-retardant suit	4
+1665	Fizzle-retardant blouse	4
+1669	Robe of serenity	4
+1673	Magic vestment	4
+1677	Glombolero	4
+1681	Sage's robe	4
+1685	Wizard's robe	4
+1689	Witch's robe	4
+1693	Prince's pea coat	4
+1697	King's coat	4
+1701	Queen's robe	4
+1705	Emperor's attire	4
+1709	Empress's robe	4
+1713	Warrior princess's dress	4
+1717	Angel's robe	4
+1721	Crimson robe	4
+1725	Flowing dress	4
+1729	Dark robe	4
+1733	Dragon robe	4
+1737	Seraph's robe	4
+1741	Gown of eternity	4
+1745	Minerva's raiment	4
+1749	Princess's robe	4
+1753	Bandana	4
+1757	Leather hat	4
+1761	Hairband	4
+1765	Pointy hat	4
+1769	Turban	4
+1773	Feathered cap	4
+1777	Bunny ears	4
+1781	Stone hardhat	4
+1785	Fur hood	4
+1789	Hermes' hat	4
+1793	Coral hairpin	4
+1797	Bronze helmet	4
+1801	Mercury's bandana	4
+1805	Silver tiara	4
+1809	Magical hat	4
+1813	Pirate's hat	4
+1817	Gold circlet	4
+1821	Thief's turban	4
+1825	Feather headband	4
+1829	Tricky turban	4
+1833	Hocus hat	4
+1837	Happy hat	4
+1841	Scholar's cap	4
+1845	Disturbin' turban	4
+1849	Malleable mask	4
+1853	Star circlet	4
+1857	Papillon mask	4
+1861	Swindler's scarf	4
+1865	Cat hat	4
+1869	Minister's mitre	4
+1873	Cavalier hat	4
+1877	Witch's hat	4
+1881	Golden tiara	4
+1885	Phantom mask	4
+1889	Freebooter's bandana	4
+1893	Stellar starflower	4
+1897	Dragon bandana	4
+1901	Spring breeze hat	4
+1905	Summer cloud hat	4
+1909	Autumn shower hat	4
+1913	Winter sky hat	4
+1917	Pirate king's cap	4
+1921	Swindler king's scarf	4
+1925	Crown of eternity	4
+1929	Tiara tremenda	4
+1933	Xenlon hair ring	4
+1937	Serenica's circlet	4
+1941	Cute cap	4
+1945	Bonny band	4
+1949	Tiara tremendísima	4
+1953	Corsair's cap	4
+1957	Black cat hat	4
+1961	Iron helmet	4
+1965	Iron mask	4
+1969	Steel helmet	4
+1973	Warrior's helm	4
+1977	Platinum headgear	4
+1981	Iron headgear	4
+1985	Hades' helm	4
+1989	Mythril helm	4
+1993	Thinking cap	4
+1997	Raging bull helm	4
+2001	Great helm	4
+2005	Metal slime helm	4
+2009	Drasilian helm	4
+2013	Goddess's Tiara	4
+2017	Warrior princess's headdress	4
+2021	Crown of Dundrasil	4
+2025	Skull helm	4
+2029	Liquid metal helm	4
+2033	Metal king helm	4
+2037	Heavenly helm	4
+2041	Erdwin's coronet	4
+2045	Irwin's helm	4
+2049	Sacred circlet	4
+2053	Minerva's tiara	4
+2057	Sun crown	4
+2061	Yggdrasil crown	4
+2065	Drustan's helm	4
+2069	Apollo's crown	4
+2073	Slime earrings	4
+2077	Safety goggles	4
+2081	Asbestos earrings	4
+2085	Anti-freeze earrings	4
+2089	Rubber earrings	4
+2093	Aerofoil earrings	4
+2097	Concrete earrings	4
+2101	Mirror earrings	4
+2105	Cinderblock earrings	4
+2109	All-weather earrings	4
+2113	Blackout earrings	4
+2117	Scholar's specs	4
+2121	Wings of serendipity	4
+2125	Gold rosary	4
+2129	Necklace of immunity	4
+2133	Full moon collar	4
+2137	Rousing rose collar	4
+2141	Star of clarity	4
+2145	Care rivière	4
+2149	Torc of truth	4
+2153	Protective pendant	4
+2157	Choker of riddance	4
+2161	Gold chain	4
+2165	Token of fealty	4
+2169	Dogged collar	4
+2173	Bow tie	4
+2177	Papillon pendant	4
+2181	Pirate king's pendant	4
+2185	Rainbow Drop	4
+2189	Circle of serendipity	4
+2193	Strength ring	4
+2197	Pink pearl ring	4
+2201	Prayer ring	4
+2205	Care ring	4
+2209	Ring of riddance	4
+2213	Gold ring	4
+2217	Ring of immunity	4
+2221	Ring of truth	4
+2225	Full moon ring	4
+2229	Rousing ring	4
+2233	Ring of clarity	4
+2237	Sorcerer's ring	4
+2241	Agility ring	4
+2245	Skull ring	4
+2249	Life ring	4
+2253	Catholicon ring	4
+2257	Goddess ring	4
+2261	Robber gloves	4
+2265	Mayoress's mittens	4
+2269	Gloomy gloves	4
+2273	Murky mittens	4
+2277	Brigand's mitts	4
+2281	Guru's gloves	4
+2285	Marquess's mittens	4
+2289	Freebooter's gloves	4
+2293	Enchantress's gloves	4
+2297	Minister's mitts	4
+2301	Monarch's mittens	4
+2305	Gold bracer	4
+2309	Life bracer	4
+2313	Wristorative	4
+2317	Mighty armlet	4
+2321	Spirit bracer	4
+2325	Brainy bracer	4
+2329	Meteorite bracer	4
+2333	Springheal boots	4
+2337	Caligae of clarity	4
+2341	Angel's sandals	4
+2345	Archangel's boots	4
+2349	General's jackboots	4
+2353	Field marshal's footwear	4
+2357	Elevating shoes	4
+2361	Fishnet stockings	4
+2365	Gemma's charm	1
+2366	Bunny tail	4
+2370	Dragon scale	4
+2374	Garter	4
+2378	Tough guy tattoo	4
+2382	Utility belt	4
+2386	Rosary	4
+2390	Bling-bling belt	4
+2394	Titan belt	4
+2398	Sorcerer's stone	4
+2402	Holy talisman	4
+2406	Devil's tail	4
+2410	Ruby of protection	4
+2414	Earthwyrm's eye	4
+2418	Lucky dragon's wing	4
+2422	Sovereign seal	4
+2426	Venus' tear	4
+2430	Monarchic mark	4
+2434	Elfin charm	4
+2438	Natty cravat	4
+2442	Suave scarf	4
+2446	Gemma's eternal charm	1
+2447	Ogler's Digest	4
+2451	Ring of changes	4
+2455	Healer	4
+2459	Supplicant	4
+2463	Assassin	4
+2467	Mystic	4
+2471	Vanguard	4
+2475	Shield-Bearer	4
+2479	Warlock	4
+2483	Trickster	4
+2487	Traveller's hood	4
+2491	Belle's bow	4

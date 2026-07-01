@@ -74,6 +74,20 @@ namespace DQ11
 			Close();
 		}
 
+		/// <summary>
+		/// Recherche "filter" dans "source" en ignorant la casse ET les accents
+		/// (é = e, É = e, etc.). Un filtre vide correspond à tout.
+		/// </summary>
+		private static bool Matches(String source, String filter)
+		{
+			if (String.IsNullOrEmpty(filter)) return true;
+			if (source == null) return false;
+			return System.Globalization.CultureInfo.InvariantCulture.CompareInfo.IndexOf(
+				source, filter,
+				System.Globalization.CompareOptions.IgnoreCase
+				| System.Globalization.CompareOptions.IgnoreNonSpace) >= 0;
+		}
+
 		private void CreateItemList(String filter)
 		{
 			ListBoxItem.Items.Clear();
@@ -84,7 +98,7 @@ namespace DQ11
 			{
 				foreach (var info in item.Tools)
 				{
-					if (String.IsNullOrEmpty(filter) || info.Name.IndexOf(filter) >= 0)
+					if (Matches(info.Name, filter))
 					{
 						ListBoxItem.Items.Add(info);
 					}
@@ -94,7 +108,7 @@ namespace DQ11
 			{
 				foreach (var info in item.Equipments)
 				{
-					if (String.IsNullOrEmpty(filter) || info.Name.IndexOf(filter) >= 0)
+					if (Matches(info.Name, filter))
 					{
 						ListBoxItem.Items.Add(info);
 					}

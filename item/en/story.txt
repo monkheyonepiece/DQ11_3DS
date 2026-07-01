@@ -1,0 +1,21 @@
+#ID	名前
+0x6A7B	Unlock Zoom (Spell)
+0x6A13	Unlock boat
+0x6A10	Unlock Erdwin's Lantern
+0x6872	Unlock Fortress of Fear
+0x69B5	Unlock Erik in the team
+0x69B6	Unlock Veronica in the team
+0x69B7	Unlock Serena in the team
+0x69B8	Unlock Serena (Short hair) in the team
+0x69B9	Unlock Sylvando in the team
+0x69BA	Unlock Rab in the team
+0x69BB	Unlock Jade in the team
+0x69BC	Unlock Hendrick in the team
+0x6A01	Expanded skill tree for Hero
+0x6A02	Expanded skill tree for Erik
+0x6A03	Expanded skill tree for Veronica
+0x6A04	Expanded skill tree for Serena
+0x6A05	Expanded skill tree for Sylvando
+0x6A06	Expanded skill tree for Rab
+0x6A07	Expanded skill tree for Jade
+0x6A08	Expanded skill tree for Hendrick

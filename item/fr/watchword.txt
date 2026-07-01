@@ -1,0 +1,34 @@
+#Address	名前	Bit
+0x674C	Autel des origines - Damdara	0
+0x674C	Autel des origines - Chateau de Tantagel	1
+0x674C	Autel des origines - Galenholm	2
+0x674C	Autel de la lignée légendaire - Grotte menant à Névéria	3
+0x674C	Autel de la lignée légendaire - Landelune	4
+0x674C	Autel de la lignée légendaire - Château de Cannock	5
+0x674C	Autel du Salut - Château de Baramos	6
+0x674C	Autel du Salut - Future maison d’Elric	7
+0x674D	Autel du Salut - Château de Baramos (Plus tard)	0
+0x674D	Autel des Élus - Cave impériale de Parthénia	1
+0x674D	Autel des Élus - Vallée secrète	2
+0x674D	Autel des Élus - Chambre de Rose	3
+0x674D	Autel de la Fiancée céleste - Clairière de Nullepart	4
+0x674D	Autel de la Fiancée céleste - Manoir des Oscuroni	5
+0x674D	Autel de la Fiancée céleste - Ruycelieu	6
+0x674D	Autel des Songes - Colonne de Pégase	7
+0x674E	Autel des Songes - Pic des Tisseurs	0
+0x674E	Autel des Songes - Abbaye des Vocations 1
+0x674E	Autel des Vestiges du monde - Mines Chromalis	2
+0x674E	Autel des Vestiges du monde - Camp des Pérégrins (Nuit)	3
+0x674E	Autel des Vestiges du monde - Camp des Pérégrins 	4
+0x674E	Autel du Roi maudit - Château de Trodain	5
+0x674E	Autel du Roi maudit - Château Félix (Crépuscule)	6
+0x674E	Autel du Roi maudit - Château Félix	7
+0x674F	Autel du Firmament - Galerie Malmerveille	0
+0x674F	Autel du Firmament - Observatoire	1
+0x674F	Autel du Firmament - Havre des aventuriers	2
+0x674F	Autel de l’Indicible - Cadis	3
+0x674F	Autel de l’Indicible - Salle du Renouveau	4
+0x674F	Autel de la Destinée - Recoins du passé	5
+0x674F	Autel de la Destinée - Galerie des réminiscences	6
+0x674F	Autel de la Destinée - Galerie des réminiscences (Niveau 2)	7
+0x6750	Autel de la Destinée - Galerie des réminiscences (Niveau 3)	0

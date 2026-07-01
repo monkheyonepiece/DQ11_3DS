@@ -510,6 +510,7 @@
     <s:String x:Key="St_Zone">ゾーン</s:String>
     <s:String x:Key="St_Poison">どく</s:String>
     <s:String x:Key="St_Curse">のろい</s:String>
+    <s:String x:Key="St_Curse2">のろい（HP）</s:String>
     <s:String x:Key="St_Death">しに</s:String>
 
     <!-- Character display names -->

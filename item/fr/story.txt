@@ -1,0 +1,21 @@
+#ID	名前
+0x6A7B	Débloquer Téléportation (Sort)
+0x6A13	Débloquer le bateau
+0x6A10	Débloquer l'Astre d'Erdwin
+0x6872	Débloquer la Forteresse de l'Effroi
+0x69B5	Débloquer Erik dans l'équipe
+0x69B6	Débloquer Véronica dans l'équipe
+0x69B7	Débloquer Séréna dans l'équipe
+0x69B8	Débloquer Séréna (Cheveux courts) dans l'équipe
+0x69B9	Débloquer Sylvando dans l'équipe
+0x69BA	Débloquer Théo dans l'équipe
+0x69BB	Débloquer Jade dans l'équipe
+0x69BC	Débloquer Hendrick dans l'équipe
+0x6A01	Arbre de compétence amélioré pour le héros
+0x6A02	Arbre de compétence amélioré pour Érik
+0x6A03	Arbre de compétence amélioré pour Véronica
+0x6A04	Arbre de compétence amélioré pour Séréna
+0x6A05	Arbre de compétence amélioré pour Sylvando
+0x6A06	Arbre de compétence amélioré pour Théo
+0x6A07	Arbre de compétence amélioré pour Jade
+0x6A08	Arbre de compétence amélioré pour Hendrick
