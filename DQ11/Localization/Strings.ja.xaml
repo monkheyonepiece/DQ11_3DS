@@ -496,6 +496,8 @@
     <s:String x:Key="Str_0493">セーブデータは読み込まれませんでした</s:String>
     <s:String x:Key="Str_0494">検索</s:String>
     <s:String x:Key="Str_0495">Lv</s:String>
+    <s:String x:Key="Str_0496">作者</s:String>
+    <s:String x:Key="Str_0497">フォーク元</s:String>
 
     <!-- Messages (code-behind) -->
     <s:String x:Key="Msg_LoadOk">読込成功</s:String>

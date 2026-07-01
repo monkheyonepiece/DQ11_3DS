@@ -1,5 +1,5 @@
-﻿using System.Windows;
-using System.Windows.Input;
+using System.Windows;
+using System.Windows.Navigation;
 
 namespace DQ11
 {
@@ -13,9 +13,10 @@ namespace DQ11
 			InitializeComponent();
 		}
 
-		private void LabelHP_MouseDown(object sender, MouseButtonEventArgs e)
+		private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
 		{
-			System.Diagnostics.Process.Start("http://turtleinsect.php.xdomain.jp/");
+			System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
+			e.Handled = true;
 		}
 	}
 }

@@ -8,7 +8,7 @@
     <s:String x:Key="Str_0005">_Enregistrer</s:String>
     <s:String x:Key="Str_0006">Enregistrer _sous</s:String>
     <s:String x:Key="Str_0007">_Quitter</s:String>
-    <s:String x:Key="Str_0008">_À propos</s:String>
+    <s:String x:Key="Str_0008">À propos</s:String>
     <s:String x:Key="Str_0009">Ouvrir</s:String>
     <s:String x:Key="Str_0010">Enregistrer</s:String>
     <s:String x:Key="Str_0011">Réglages de base</s:String>
@@ -496,6 +496,8 @@
     <s:String x:Key="Str_0493">Aucun fichier de sauvegarde chargé</s:String>
     <s:String x:Key="Str_0494">Recherche</s:String>
     <s:String x:Key="Str_0495">Niveau</s:String>
+    <s:String x:Key="Str_0496">Auteur</s:String>
+    <s:String x:Key="Str_0497">Forké depuis</s:String>
 
     <!-- Messages (code-behind) -->
     <s:String x:Key="Msg_LoadOk">Chargement réussi</s:String>

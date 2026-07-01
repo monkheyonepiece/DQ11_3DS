@@ -8,7 +8,7 @@
     <s:String x:Key="Str_0005">_Save</s:String>
     <s:String x:Key="Str_0006">Save _As</s:String>
     <s:String x:Key="Str_0007">E_xit</s:String>
-    <s:String x:Key="Str_0008">_About</s:String>
+    <s:String x:Key="Str_0008">About</s:String>
     <s:String x:Key="Str_0009">Open</s:String>
     <s:String x:Key="Str_0010">Save</s:String>
     <s:String x:Key="Str_0011">Basic Settings</s:String>
@@ -496,6 +496,8 @@
     <s:String x:Key="Str_0493">No savefile loaded</s:String>
     <s:String x:Key="Str_0494">Search</s:String>
     <s:String x:Key="Str_0495">Level</s:String>
+    <s:String x:Key="Str_0496">Author</s:String>
+    <s:String x:Key="Str_0497">Forked from</s:String>
 
     <!-- Messages (code-behind) -->
     <s:String x:Key="Msg_LoadOk">Load succeeded</s:String>
